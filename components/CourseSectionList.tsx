@@ -1,20 +1,18 @@
 "use client";
 
-import { CourseLibrary, Meeting, meetingTypeToDescription } from "@/lib/course";
+import { Meeting, meetingTypeToDescription } from "@/lib/course";
 import { useScheduleStore } from "@/store/useScheduleStore";
 import { CourseInspector } from "./CourseInspector";
-import { Instructor, Section } from "@prisma/client";
+import { Instructor, School, Section } from "@prisma/client";
 import { useEffect, useState } from "react";
 import { getCourseSectionsWithInstructors } from "@/lib/getCourseSections";
 import { formatTime } from "./CourseScheduleBlock";
-import { SchoolInfo } from "@/lib/getSchoolInfo";
-import { useGraphStore } from "@/store/useGraphStore";
 
 type SectionWithInstructor = Section & { instructors: Instructor[] };
 
 const sectionsCache : Record<string, SectionWithInstructor[]> = {};
 
-export default function CourseSectionList({ addTarget, schoolInfo } : { addTarget : "graph" | "schedule", schoolInfo : SchoolInfo }) {
+export default function CourseSectionList({ addTarget, schoolInfo } : { addTarget : "graph" | "schedule", schoolInfo : School }) {
     
     const [sections, setSections] = useState<SectionWithInstructor[]>([]);
     const [sectionsCourse, setSectionsCourse] = useState<string>("");
@@ -91,7 +89,7 @@ export default function CourseSectionList({ addTarget, schoolInfo } : { addTarge
                                             <td>{meetingTypeToDescription[meeting.type]}</td>
                                             <td title={meeting.building + " " + meeting.room}><a 
                                                 className = "cursor-pointer hover:text-blue-600 transition-colors"
-                                                onClick={() => false} href={"https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(meeting.building + " " + meeting.room + " " + schoolInfo.name)} target="_blank" rel="noopener noreferrer">
+                                                onClick={() => false} href={"https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(meeting.building + " " + meeting.room + " " + schoolInfo.shortName)} target="_blank" rel="noopener noreferrer">
                                                 {meeting.buildingCode}
                                             </a></td>
                                             <td className="w-[75px]">{getDateString(meeting)}</td>

@@ -1,21 +1,24 @@
 
+import { School } from "@prisma/client";
 import { Course, CourseGeneralEducation, CourseLibrary, CoursePrerequisites } from "./course";
-import { SchoolInfo } from "./getSchoolInfo";
 import { prisma } from "./prisma";
 
 const toSlug = (code: string) => code.replace(/\s+/g, '').toUpperCase();
 const coursesCache : Record<string, CourseLibrary> = {};
 
 const isDev = process.env.NODE_ENV === 'development';
-export default async function getSchoolCourses(school : SchoolInfo) : Promise<CourseLibrary> {
+export default async function getSchoolCourses(school : School) : Promise<CourseLibrary> {
 
     if (!isDev)
-        if (coursesCache[school.id]) return coursesCache[school.id];
+        if (coursesCache[school.name]) return coursesCache[school.name];
 
     const dbCourses = await prisma.course.findMany({
         include: {
         instructors: true,     
         prerequisiteFor: true, 
+        },
+        where: {
+            schoolName: school.name
         }
     });
 
@@ -36,7 +39,7 @@ export default async function getSchoolCourses(school : SchoolInfo) : Promise<Co
       grading: "Letter" 
     };
 
-    coursesCache[school.id] = accumulator;
+    coursesCache[school.name] = accumulator;
 
     return accumulator;
   }, {} as Record<string, Course>); // <--- Initialize with an empty object

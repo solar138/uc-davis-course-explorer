@@ -1,13 +1,12 @@
-export default function getSchoolInfo(school: string) : SchoolInfo {
-    return {
-        iconUrl: "https://catalog.ucdavis.edu/images/uc-logo-gold.svg",
-        name: "UC Davis",
-        fullName: "University of California, Davis",
-        location: "Davis, California",
-        primaryColor: "#FFBF00", // Color of main elements (eg. text and logos)
-        secondaryColor: "#022851", // Color of secondary elements (eg. headers, backgrounds)
-        id: "ucdavis"
-    }
+import { School } from "@prisma/client";
+import { prisma } from "./prisma";
+
+export default function getSchoolInfo(school: string) : Promise<School | null> {
+    return prisma.school.findUnique({
+        where: {
+            name: school
+        }
+    });
 }
 
 export type SchoolInfo = {

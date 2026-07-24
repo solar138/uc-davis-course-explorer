@@ -1,11 +1,11 @@
-import { redirect } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import getSchoolCourses from "@/lib/getSchoolCourses";
 import getSchoolInfo from "@/lib/getSchoolInfo";
 import { CourseEditor } from "@/components/CourseEditor";
 import Header from "@/components/Header";
 
 export interface SchoolProps {
-  params: Promise<{ school: string[] }>;
+  params: Promise<{ school: string }>;
 }
 
 export default async function CourseExplorer({ params } : SchoolProps ) {
@@ -13,7 +13,12 @@ export default async function CourseExplorer({ params } : SchoolProps ) {
   
   if (args.school == undefined ||args.school.length == 0) return "Please select a school";
 
-  const schoolInfo = getSchoolInfo( (args).school[0] );
+  const schoolInfo = await getSchoolInfo( (args).school );
+
+  if (schoolInfo == null) {
+    notFound();
+  }
+  
   const courses = await getSchoolCourses(schoolInfo);
 
   const selectedCourse = args.school.length == 1 ? undefined : decodeURIComponent(args.school[1]).toUpperCase();
@@ -25,7 +30,7 @@ export default async function CourseExplorer({ params } : SchoolProps ) {
 
   return (
     <div className="flex flex-col w-full h-screen overflow-hidden text-gray-900 bg-white">
-      <Header> Course Editor —  <span className="ml-2 text-gray-500">{schoolInfo.name}</span> </Header> 
+      <Header> Course Editor —  <span className="ml-2 text-gray-500">{schoolInfo.shortName}</span> </Header> 
 
       <CourseEditor courseLibrary={courses} courseCode={selectedCourse ?? ""}/>
       <footer className="flex-none h-8 border-t bg-gray-50 px-4 flex items-center border-gray-200 justify-between text-xs text-gray-500 z-10">

@@ -5,12 +5,12 @@ import { useState, useEffect, SetStateAction, Dispatch } from 'react';
 import { searchCourses } from '@/app/actions/searchCourses';
 import { redirect } from 'next/navigation';
 import Collapsible from './Collapsible';
-import { Course, Prisma } from '@prisma/client';
+import { Course, Prisma, School } from '@prisma/client';
 
 const isDev = process.env.NODE_ENV === 'development';
 
 
-export default function SearchSidebar({ setSelectedCourse } : { setSelectedCourse? : Dispatch<SetStateAction<string>> | undefined }) {
+export default function SearchSidebar({ setSelectedCourse, school } : { setSelectedCourse? : Dispatch<SetStateAction<string>> | undefined, school : School }) {
   const [searchTerm, setSearchTerm] = useState(isDev ? "MAT 021" : "");
   const [results, setResults] = useState<any[]>([]);
   const [isSearching, setIsSearching] = useState(false);
@@ -54,7 +54,7 @@ export default function SearchSidebar({ setSelectedCourse } : { setSelectedCours
       </Collapsible>
     </div>
 
-  const query = constructQuery(searchTerm, filters);
+  const query = constructQuery(searchTerm, filters, school.name);
 
   // Debounce user input
   useEffect(() => {
@@ -133,7 +133,7 @@ export default function SearchSidebar({ setSelectedCourse } : { setSelectedCours
   );
 }
 
-function constructQuery(searchTerm: string, filters: Record<string, boolean>) {
+function constructQuery(searchTerm: string, filters: Record<string, boolean>, school: string) {
   const topicalBreadth = { SS: filters['Soc Sci'], SE: filters['Sci Eng'], AH: filters['Arts & Hum'] };
   const coreLiteracies = { ACGH: filters['American CGH'], DD: filters['Domestic Div'], OL: filters['Oral Lit'], QL: filters['Quantitative Lit'], SL: filters['Scientific Lit'], VL: filters['Visual Lit'], WC: filters['World Cultures'], WE: filters['Writing Exp'] };
   const units = { "0-2": filters['0-2'], "3": filters['3'], "4": filters['4'], "5+": filters['5+'] };
@@ -163,12 +163,16 @@ function constructQuery(searchTerm: string, filters: Record<string, boolean>) {
         { slug: { contains: searchTerm.replace(/\s/g, '').toUpperCase() } },
         { name: { contains: searchTerm, mode: "insensitive" } },
       ] },
+      { schoolName: school },
       ...queries
     ]
   } : {
     OR: [
       { slug: { contains: searchTerm.replace(/\s/g, '').toUpperCase() } },
       { name: { contains: searchTerm, mode: "insensitive" } },
+    ],
+    AND: [
+      { schoolName: school }
     ]
   };
 }

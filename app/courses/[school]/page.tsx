@@ -8,7 +8,7 @@ import getSchoolInfo from "@/lib/getSchoolInfo";
 import Header from "@/components/Header";
 
 interface SchoolProps {
-  params: Promise<{ school: string[] }>;
+  params: Promise<{ school: string }>;
 }
 
 
@@ -17,7 +17,11 @@ export default async function CourseExplorer({ params } : SchoolProps ) {
   
   if (args.school == undefined ||args.school.length == 0) return "Please select a school";
 
-  const schoolInfo = getSchoolInfo( (args).school[0] );
+  const schoolInfo = await getSchoolInfo( (args).school );
+
+  if (schoolInfo == null) {
+    return "School not found or not supported: " + args.school;
+  }
 
   const selectedCourse = args.school.length == 1 ? undefined : decodeURIComponent(args.school[1]).toUpperCase();
 
@@ -28,9 +32,9 @@ export default async function CourseExplorer({ params } : SchoolProps ) {
 
   return (
     <div className="flex flex-col w-full h-screen overflow-hidden text-gray-900 bg-white">
-      <Header> Course Explorer —  <span className="ml-2 text-gray-500">{schoolInfo.name}</span> </Header> 
+      <Header> Course Explorer —  <span className="ml-2 text-gray-500">{schoolInfo.shortName}</span> </Header> 
       <main className="flex-1 flex overflow-hidden min-h-0">
-          <CourseSearch/>
+          <CourseSearch school={schoolInfo}/>
 
           <div className="flex-1 relative bg-gray-100 p-4"><CourseGraph courses={[]} />
           </div>

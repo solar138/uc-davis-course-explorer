@@ -31,7 +31,10 @@ model Course {
   instructors Instructor[] 
   sections    Section[]
   
+  schoolName   String 
+  
   examCredits ExamCredit[]
+  school      School @relation(fields: [schoolName], references: [name], onDelete: Cascade, map: "course_school_fkey")
 }
 
 model Instructor {
@@ -41,8 +44,11 @@ model Instructor {
   email       String?                 
   rmpScore    Float?                        
   
+  schoolName   String 
+
   courses     Course[] 
   sections    Section[]
+  school      School @relation(fields: [schoolName], references: [name], onDelete: Cascade, map: "instructor_school_fkey")
 }
 
 model Section {
@@ -59,10 +65,16 @@ model Section {
 }
 
 model School {
-  name String @id
-  fullName String
-  shortName String
-  address String
+  name            String @id // eg. ucdavis
+  iconUrl         String?    // eg. https://catalog.ucdavis.edu/images/uc-logo-gold.svg
+  fullName        String     // eg. University of California, Davis
+  address         String     // eg. Davis, California
+  shortName       String     // eg. UC Davis
+  primaryColor    String?    // main element colors
+  secondaryColor  String?    // secondary element colors
+
+  courses         Course[]
+  instructors     Instructor[]
 }
 
 model Exam {
@@ -103,9 +115,12 @@ model Degree {
   school       String // e.g., ucdavis
   code         String // e.g., aerospace-science-engineering-bs
   abbreviation String?// e.g., EASE
+  shortName    String?// e.g., Aerospace Engineering 
   name         String // e.g., Aerospace Science & Engineering, Bachelor of Science
   type         String // e.g., BS, BA, Minor, Ms
   aliases      String[] @default([])
+  description  String @default("")
+  url          String?
 
   requirements Json   
 }

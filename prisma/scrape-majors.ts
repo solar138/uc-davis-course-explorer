@@ -3,6 +3,7 @@ import * as cheerio from 'cheerio';
 import * as fs from 'fs';
 import * as he from 'he';
 import importedAliases from './major-aliases.json';
+import importedShortNames from './major-shortnames.json';
 
 // can scrape from courseleaf index.xml documents.
 const prisma = new PrismaClient();
@@ -18,7 +19,7 @@ async function downloadIndex(url = "https://catalog.ucdavis.edu/departments-prog
         const response = await fetch(url);
 
         const xml = await response.text();
-        const $ = cheerio.load(xml, {xml: true});
+        const $ = cheerio.load(xml, { xml: true });
 
         page = $("programsanddegreestext").html();
         if (page == null) {
@@ -60,16 +61,17 @@ async function downloadIndex(url = "https://catalog.ucdavis.edu/departments-prog
                 page = await response.text();
                 fs.writeFileSync(cacheDir + file + ".xml", page);
             }
-            parsePage(page as string, file);
+            parsePage(page as string, file, url);
         } catch {
             console.log(url + " not found.")
         }
     }
 }
 
-function parsePage(page: string, file: string) {
-    const $page = cheerio.load(page, {xml: true});
+function parsePage(page: string, file: string, url?:string) {
+    const $page = cheerio.load(page, { xml: true });
     const requirements = $page("requirementstext");
+    const information = $page("informationtext");
     const title = $page("title").html();
 
     if (title == "") {
@@ -79,11 +81,40 @@ function parsePage(page: string, file: string) {
 
     if (requirements.text() == "") {
         console.log("requirementstext not found in " + file);
-        pushToDb([], file, title ?? "");
-        return;
     }
     const parsed = parseRequirements(requirements.text() ?? "");
-    pushToDb(parsed, file, title ?? "");
+    // const description = parseDescription(information.text() ?? "");
+    pushToDb(parsed, file, title ?? "", cheerio.load($page("quickviewtext").text()).text() ?? "", url?.replace("/index.xml", ""));
+}
+
+function parseDescription(html: string) {
+    const $ = cheerio.load(html);
+    const programHeader = $('h3:contains("Undergraduate Program")');
+
+    var description = "";
+
+    if (programHeader.length > 0) {
+        // look at sibling paragraphs
+        programHeader.nextAll('p').each((i, el) => {
+            const text = $(el).text().trim();
+
+            // skip navigation/short intros
+            if (text.length < 30) {
+                return true;
+            }
+
+            // skip admin junk
+            if (text.includes('ABET') || text.includes('accredited') || text.includes('administers')) {
+                return true;
+            }
+
+            description = text;
+            return false; 
+        });
+    } else {
+        console.log("no program header found");
+    }
+    return description;
 }
 
 function parseRequirements(html: string) {
@@ -172,7 +203,7 @@ function parseRequirements(html: string) {
     return requirements;
 }
 
-async function pushToDb(requirements: any, code: string, name: string, school = "ucdavis") {
+async function pushToDb(requirements: any, code: string, name: string, description = "", url="",school = "ucdavis") {
     name = he.decode(name);
     var type = "unknown";
     const nameLower = name.toLowerCase();
@@ -228,6 +259,25 @@ async function pushToDb(requirements: any, code: string, name: string, school = 
         console.log(`Adding alias ${majorAliases[alias].join()} to degree program ${name}`);
         aliases.push(...majorAliases[alias]);
     }
+    var shortName = "";
+
+    const shortNames = importedShortNames as Record<string, string>;
+    outerLoop:
+    for (const name in shortNames) {
+        const parts = name.split(" ");
+        for (const part of parts) {
+            if (!nameLower.includes(part.toLowerCase())) {
+                continue outerLoop;
+            }
+        }
+        console.log(`Adding shortname ${shortNames[name]} to degree program ${name}`);
+        shortName = shortNames[name];
+        break;
+    }
+
+    if (shortName == "") {
+        shortName = name.split(", ").slice(0, -1).join(", ");
+    }
 
     await prisma.degree.upsert({
         where: {
@@ -241,7 +291,10 @@ async function pushToDb(requirements: any, code: string, name: string, school = 
             name,
             school,
             type,
-            aliases
+            aliases,
+            shortName,
+            description,
+            url
         },
         create: {
             code,
@@ -249,7 +302,10 @@ async function pushToDb(requirements: any, code: string, name: string, school = 
             name,
             school,
             type,
-            aliases
+            aliases,
+            shortName,
+            description,
+            url
         }
     });
 }
