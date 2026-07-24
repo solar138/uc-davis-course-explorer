@@ -1,25 +1,22 @@
 "use client"
-
-import { useGraphStore } from '@/store/useGraphStore';
 import { useState, useEffect, SetStateAction, Dispatch } from 'react';
-import { searchCourses } from '@/app/actions/searchCourses';
-import { redirect } from 'next/navigation';
+import { searchDegrees } from '@/app/actions/searchDegrees';
 import Collapsible from './Collapsible';
-import { Course, Prisma } from '@prisma/client';
+import useDegreeStore from '@/store/useDegreeStore';
 
 const isDev = process.env.NODE_ENV === 'development';
 
 
-export default function SearchSidebar({ setSelectedCourse } : { setSelectedCourse? : Dispatch<SetStateAction<string>> | undefined }) {
-  const [searchTerm, setSearchTerm] = useState(isDev ? "MAT 021" : "");
-  const [results, setResults] = useState<any[]>([]);
+export default function SearchSidebar() {
+  const [searchTerm, setSearchTerm] = useState(isDev ? "Aerospace Engineering" : "");
+  const [results, setResults] = useState<{name: string, type: string, code: string}[]>([]);
   const [isSearching, setIsSearching] = useState(false);
   const [hasMore, setHasMore] = useState(false);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const filterStates : boolean[] = [];
-  const setInspectedCourse = useGraphStore((state) => state.setInspectedCourse);
+  const setInspectedDegree = useDegreeStore((state: any) => state.setInspectedDegree);
 
-  function FilterList(title: string, filters: string[], where : Record<string, boolean>,col: boolean = false) {
+  function FilterList(title: string, filters: string[], where : Record<string, boolean>, col: boolean = false) {
     return (
       <div >
         {title.length > 0 ? <h2>{title}</h2> : null }
@@ -43,13 +40,8 @@ export default function SearchSidebar({ setSelectedCourse } : { setSelectedCours
           <span className="text-lg">Filters</span>
         }>
         <div className="flex flex-col">
-          <h2 className="font-bold">General Education</h2>
-          {FilterList("Topical Breadth:", ['Soc Sci', 'Sci Eng', 'Arts & Hum'], filters)}
-          {FilterList("Core Literacies:", ['American CGH', 'Domestic Div', 'Oral Lit', 'Quantitative Lit', 'Scientific Lit', 'Visual Lit', 'World Cultures', 'Writing Exp'], filters)}
-          <h2 className="font-bold">Units</h2>
-          {FilterList("", ['0-2', '3', '4', '5+'], filters)}
-          <h2 className="font-bold">Course Level</h2>
-          {FilterList("", ['000-099 Lower', '100-199 Upper', '200+ Graduate'], filters, true)}
+          {FilterList("Level:", ['Bachelors', 'Masters', 'PhD'], filters)}
+          {FilterList("Subject:", ['Art', 'Science', 'Engineering'], filters)}
         </div>
       </Collapsible>
     </div>
@@ -62,7 +54,7 @@ export default function SearchSidebar({ setSelectedCourse } : { setSelectedCours
       if (searchTerm.length >= 2 || Object.values(filters).some(x => x)) { // Only search if they have entered at least 2 characters or selected a filter
         setIsSearching(true);
 
-        const res = await searchCourses(query);
+        const res = await searchDegrees(query);
         setResults(res.data);
         setHasMore(res.hasMore);
         setIsSearching(false);
@@ -83,7 +75,7 @@ export default function SearchSidebar({ setSelectedCourse } : { setSelectedCours
       if (hasMore && !isLoadingMore && !isSearching) {
         setIsLoadingMore(true);
         
-        const response = await searchCourses(query, results.length);
+        const response = await searchDegrees(query, results.length);
         
         setResults((prev) => [...prev, ...response.data]);
         setHasMore(response.hasMore);
@@ -95,7 +87,7 @@ export default function SearchSidebar({ setSelectedCourse } : { setSelectedCours
 
   return (
     <div className="w-80 h-full border-r border-gray-200 bg-white p-4 flex flex-col gap-1">
-      <h2 className="font-bold text-xl">Course Catalog</h2>
+      <h2 className="font-bold text-xl">Degree Catalog</h2>
       
       <input
         type="text"
@@ -113,19 +105,18 @@ export default function SearchSidebar({ setSelectedCourse } : { setSelectedCours
         <div className="overflow-y-auto flex-1 flex flex-col gap-0.5">
           {isSearching && <p className="text-gray-400 text-sm">Searching...</p>}
           
-          {results.map((course) => (
+          {results.map((Degree) => (
             <button 
-              key={course.id}
-              onClick={setSelectedCourse ? () => setSelectedCourse(course.slug) : () => setInspectedCourse(course)}
+              key={Degree.code}
+              onClick={setInspectedDegree(Degree)}
               className="text-left p-2 rounded hover:bg-blue-50 transition-colors cursor-pointer"
             >
-              <div className="font-bold">{course.code} - {course.name}</div>
-              <div className="text-sm text-gray-600 wrap">{course.shortDesc}</div>
+              <div>{Degree.name}</div>
             </button>
           ))}
           
           {results.length === 0 && searchTerm.length >= 2 && !isSearching && (
-            <p className="text-gray-400 text-sm">No courses found.</p>
+            <p className="text-gray-400 text-sm">No Degrees found.</p>
           )}
         </div>
       </div>
@@ -134,41 +125,16 @@ export default function SearchSidebar({ setSelectedCourse } : { setSelectedCours
 }
 
 function constructQuery(searchTerm: string, filters: Record<string, boolean>) {
-  const topicalBreadth = { SS: filters['Soc Sci'], SE: filters['Sci Eng'], AH: filters['Arts & Hum'] };
-  const coreLiteracies = { ACGH: filters['American CGH'], DD: filters['Domestic Div'], OL: filters['Oral Lit'], QL: filters['Quantitative Lit'], SL: filters['Scientific Lit'], VL: filters['Visual Lit'], WC: filters['World Cultures'], WE: filters['Writing Exp'] };
-  const units = { "0-2": filters['0-2'], "3": filters['3'], "4": filters['4'], "5+": filters['5+'] };
-  const courseLevel = { "000-099": filters['000-099 Lower'], "100-199": filters['100-199 Upper'], "200+": filters['200+ Graduate'] };
-
-  const queries : any[] = [];
-
-  for (const genEd in topicalBreadth) { 
-    if ((topicalBreadth as Record<string, boolean>)[genEd]) {
-      queries.push({ generalEducation: { path: ['topicalBreadth'], array_contains: genEd }});
-    }
+  const words = searchTerm.split(" ");
+  console.log(filters);
+  const typeQuery : any[] = [];
+  if (filters["Bachelors"])
+    typeQuery.push("bachelor")
+  if (filters["Masters"])
+    typeQuery.push("master")
+  if (filters["PhD"])
+    typeQuery.push("phd")
+  return {
+    AND: [...words.map(word => ({ code: { contains: word.toLowerCase() } })), ...typeQuery.map(type => ({ type: { contains: type } }))]
   }
-
-  for (const genEd in coreLiteracies) { 
-    if ((coreLiteracies as Record<string, boolean>)[genEd]) {
-      queries.push({ generalEducation: { path: ['coreLiteracies'], array_contains: genEd }});
-    }
-  }
-
-  if (Object.values(units).some(x => x)) {
-
-  }
-
-  return queries.length > 0 ? {
-    AND: [
-      { OR: [
-        { slug: { contains: searchTerm.replace(/\s/g, '').toUpperCase() } },
-        { name: { contains: searchTerm, mode: "insensitive" } },
-      ] },
-      ...queries
-    ]
-  } : {
-    OR: [
-      { slug: { contains: searchTerm.replace(/\s/g, '').toUpperCase() } },
-      { name: { contains: searchTerm, mode: "insensitive" } },
-    ]
-  };
 }

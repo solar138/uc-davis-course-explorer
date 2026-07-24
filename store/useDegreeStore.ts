@@ -4,10 +4,18 @@ import { persist } from 'zustand/middleware';
 const isDev = process.env.NODE_ENV === 'development';
 export const useDegreeStore = create(persist((set) => ({
   school: "ucdavis",
-  major: isDev ? "EASE" : "",
+  inspectedDegree: "",
+  setInspectedDegree: (degree: string) => set({ inspectedDegree: degree }),
   setSchool: (school: string) => set({ school }),
-  setMajor: (major: string) => set({ major }),
-  
+
+  degreePrograms: [],
+  addDegree: (degree: string) => set((state : any) => ({
+    degreePrograms: [...state.degreePrograms, degree]
+  })),
+  removeDegree: (degree: string) => set((state : any) => ({
+    degreePrograms: state.degreePrograms.filter((deg: string) => deg !== degree)
+  })),
+  clearDegrees: () => set({ degreePrograms: [] }),
 }),
     {
       name: 'degree',
