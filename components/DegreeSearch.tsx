@@ -42,7 +42,7 @@ export default function SearchSidebar({school} : {school : School}) {
         }>
         <div className="flex flex-col">
           {FilterList("Level:", ['Bachelors', 'Masters', 'PhD', 'Minor'], filters)}
-          {FilterList("degree Subject Area:", ['Art', 'Science', 'Engineering'], filters)}
+          {FilterList("Degree Subject Area:", ['Art', 'Science', 'Engineering'], filters)}
         </div>
       </Collapsible>
     </div>
@@ -90,7 +90,7 @@ export default function SearchSidebar({school} : {school : School}) {
 
   return (
     <div className="w-80 h-full border-r border-gray-200 bg-white p-4 flex flex-col gap-1">
-      <h2 className="font-bold text-xl">degree Catalog</h2>
+      <h2 className="font-bold text-xl">Degree Catalog</h2>
       
       <input
         type="text"
