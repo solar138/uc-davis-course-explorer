@@ -94,7 +94,7 @@ export default function SearchSidebar({school} : {school : School}) {
       
       <input
         type="text"
-        placeholder="Search MAT 021A or Calculus..."
+        placeholder="Search science or engineering"
         className="border p-2 rounded w-full border-gray-400"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
