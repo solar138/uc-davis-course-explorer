@@ -2,7 +2,7 @@ import CourseGraph from "@/components/CourseGraph";
 import { CourseInspector } from "@/components/CourseInspector";
 import CourseSearch from "@/components/CourseSearch";
 import { notFound, redirect } from "next/navigation";
-import { Footer } from "../../../../components/Footer";
+import { Footer } from "../../../components/Footer";
 import getSchoolCourses from "@/lib/getSchoolCourses";
 import getSchoolInfo from "@/lib/getSchoolInfo";
 import { CourseSchedule } from "@/components/CourseSchedule";
