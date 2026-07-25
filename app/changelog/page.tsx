@@ -8,6 +8,7 @@ export default async function CourseExplorer() {
       <Header> Changelog</Header> 
       <main className="flex-1 flex overflow-hidden min-h-0">
         <article className="p-4 text-justify w-full max-w-2xl mx-auto gap-4 flex flex-col">
+          <ChangelogEntry date="July 24, 2026" changes={["NEW: Degree planner, currently supports degree program selection and entering exam credits", "Course requirements planning coming soon"]}/>
           <ChangelogEntry date="July 23, 2026" changes={["Clicking on a scheduler block now shows it's sections", "Section list for a scheduled course highlights the current section", "Course name now shown on top of section list"]}/>
           <ChangelogEntry date="July 20, 2026" changes={["User data now persists locally. Logins coming soon for storing your data on the cloud", "Reorganized header"]}/>
           <ChangelogEntry date="July 16, 2026" changes={["Sections now preview meetings when hovering over their list entries", "Some potential bandwidth and performance improvements", "Fixed: Duplicate scheduler error messages"]}/>
