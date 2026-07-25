@@ -1,4 +1,3 @@
-import { SchoolProps } from "@/app/editor/[[...school]]/page";
 import { DegreeInspector } from "@/components/DegreeInspector";
 import DegreePlanner from "@/components/DegreePlanner";
 import DegreeSearch from "@/components/DegreeSearch";
@@ -7,7 +6,7 @@ import Header from "@/components/Header";
 import getSchoolInfo from "@/lib/getSchoolInfo";
 import { notFound } from "next/navigation";
 
-export default async function CourseExplorer({ params } : SchoolProps ) {
+export default async function CourseExplorer({ params } : { params : Promise<{ school: string }> } ) {
   var args = await params;
   if (args.school == undefined ||args.school.length == 0) return "Please select a school";
 

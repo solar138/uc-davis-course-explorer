@@ -10,12 +10,7 @@ import { useScheduleStore } from "@/store/useScheduleStore";
 import CourseSectionList from "@/components/CourseSectionList";
 import Header from "@/components/Header";
 
-interface SchoolProps {
-  params: Promise<{ school: string }>;
-}
-
-
-export default async function CourseScheduler({ params } : SchoolProps ) {
+export default async function CourseScheduler({ params } : { params : Promise<{ school: string }> }) {
   var args = await params;
   
   if (args.school == undefined ||args.school.length == 0) return "Please select a school";
