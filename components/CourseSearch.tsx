@@ -18,6 +18,8 @@ export default function SearchSidebar({ setSelectedCourse, school } : { setSelec
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const filterStates : boolean[] = [];
   const setInspectedCourse = useGraphStore((state) => state.setInspectedCourse);
+  const setSchool = useGraphStore((state) => state.setSchool);
+  setSchool(school.name);
 
   function FilterList(title: string, filters: string[], where : Record<string, boolean>,col: boolean = false) {
     return (

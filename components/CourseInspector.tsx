@@ -14,6 +14,7 @@ import getCourseInfo from "@/lib/getCourseInfo";
 export function CourseInspector({ courseId, addTarget, showUnlocks = false } : { courseId? : string, addTarget : "graph" | "schedule", showUnlocks : boolean }) {
   
   const inspectedCourse = useGraphStore((state) => state.inspectedCourse);
+  const school = useGraphStore((state) => state.school);
   const setInspectedCourse = useGraphStore((state) => state.setInspectedCourse);
   const addCourse = addTarget == "graph" ? useGraphStore((state) => state.addCourse) : useScheduleStore((state) => state.addCourseToSchedule);
   const removeCourse = addTarget == "graph" ? useGraphStore((state) => state.removeCourse) : useScheduleStore((state) => state.removeCourseFromSchedule);
@@ -37,7 +38,7 @@ export function CourseInspector({ courseId, addTarget, showUnlocks = false } : {
 
   useEffect(() => {
     if (courseId != undefined) {
-      getCourseInfo(courseId, true).then((course) => {
+      getCourseInfo(school, courseId).then((course) => {
         setCourse(course);
       });
     }
@@ -49,7 +50,7 @@ export function CourseInspector({ courseId, addTarget, showUnlocks = false } : {
     </div>;
   }
   return <div className="w-1/4 min-w-[500px] border-r border-gray-200 bg-white p-6 overflow-y-auto">
-    <h2 className="text-xl font-bold">{course.code} - {course.name}</h2>
+    <h2 className="text-xl font-bold">{course.code} - {course.name}<button className="float-right cursor-pointer hover:text-red-600 transition-colors" title="Close" onClick={() => setInspectedCourse(null)}>X</button></h2>
     {RenderGeneralEducation((course.generalEducation as CourseGeneralEducation) ?? {})}
     <p className="text-gray-500">{course.name}</p>
     <p className="italic mt-4">{course.description}</p>

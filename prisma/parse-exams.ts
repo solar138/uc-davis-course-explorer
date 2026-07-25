@@ -1,17 +1,18 @@
 import { PrismaClient } from '@prisma/client';
-import ibExams from '../raw/ibexams.json'; // adjust path as needed
+import apExams from '../raw/apexams.json'; // adjust path as needed
 
 const prisma = new PrismaClient();
 
 async function ingestIBExams() {
-  console.log("Starting IB Exam ingestion...");
+  console.log("Starting AP Exam ingestion...");
 
-  for (const examData of ibExams) {
+  for (const examData of apExams) {
     // 1. Clean the data
     const subject = examData.name.trim();
-    const type = "ib";
-    const level = "hl"; // Standardizing to HL for UC Davis IB credits
-    const minScore = examData.minScore || 5; // Default to 5 if not specified
+    const type = "ap";
+    const level = ""; // Standardizing to HL for UC Davis IB credits
+    const minScore = examData.minScore || 3; // Default to 5 if not specified
+    const maxScore = examData.maxScore || 5;
 
     // 2. Upsert the base Exam record
     await prisma.exam.upsert({
@@ -22,7 +23,6 @@ async function ingestIBExams() {
       create: { type, subject, level, name: subject }
     });
 
-    console.log()
     // 3. Upsert the Exam Credit rule for UC Davis
     await prisma.examCredit.upsert({
       where: {
@@ -48,6 +48,7 @@ async function ingestIBExams() {
         examSubject: subject,
         examLevel: level,
         minScore: minScore,
+        maxScore: maxScore,
         creditUnits: examData.units,
         creditCourses: {
           connect: examData.courses.map((courseCode) => ({ slug: courseCode }))

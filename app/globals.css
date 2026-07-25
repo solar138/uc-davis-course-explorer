@@ -25,6 +25,84 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.tabGroup {
+  display: flex;
+  flex-direction: row;
+  border-bottom: var(--color-gray-200) 1px solid;
+  width: 100%;
+  justify-content: center;
+}
+
+.tab {
+  display: block;
+  padding: 5px 10px;
+  width: 100px;
+  text-align: center; 
+  cursor: pointer;
+}
+
+.tab::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 15%;
+  height: 70%; 
+  width: 1px;
+  background-color: #d7d7d7;
+}
+
+.tab input {
+  display: none;
+}
+
+.tab:has(input:checked) {
+  border-bottom: #3d77e4 2px solid;
+  color: #3d77e4;
+  font-weight: bold;
+}
+
 a {
   text-decoration: underline;
+}
+
+.dropdown,.numberfield {
+  border:#818181 1px solid;
+  padding: 5px; 
+  border-radius: 5px; 
+  margin: 5px; 
+  width: 100%;
+}
+
+.dropdown div, .numberfield label div {
+  padding-left: 15px; 
+  font-size: 12px;
+}
+
+.dropdown select, .numberfield label input {
+  font-size: 16px; 
+  width: 100%;
+}
+ 
+.dropdown:has(select[disabled]), .numberfield:has(label input[disabled]) {
+  opacity: 0.5;
+}
+
+.button { 
+  padding: .5rem 1rem; 
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button.blue {
+  background-color: #2a65d3;
+  color: #ffffff;  
+}
+.button.blue:hover {
+  background-color: #74a5ff;
+  color: #ffffff; 
+}
+.button.blue:disabled {
+  background-color:#a1aec5;
+  color: #e2e2e2; 
+  cursor: default;
 }

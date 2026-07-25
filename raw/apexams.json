@@ -1,0 +1,509 @@
+[
+    {
+        "name": "2-D Art & Design",
+        "units": 8,
+        "courses": [],
+        "duplicateCredit": false
+    },
+    {
+        "name": "3-D Art & Design",
+        "units": 8,
+        "courses": [],
+        "duplicateCredit": false
+    },
+    {
+        "name": "Art History",
+        "units": 8,
+        "courses": [],
+        "duplicateCredit": false
+    },
+    {
+        "name": "African American Studies",
+        "units": 4,
+        "courses": [
+            "AAS010"
+        ],
+        "duplicateCredit": true
+    },
+    {
+        "name": "Biology",
+        "units": 8,
+        "courses": [
+            "BIS010"
+        ],
+        "duplicateCredit": false
+    },
+    {
+        "name": "Calculus AB",
+        "units": 4,
+        "courses": [],
+        "duplicateCredit": false,
+        "minScore": 3,
+        "maxScore": 3
+    },
+    {
+        "name": "Calculus AB",
+        "units": 4,
+        "courses": [
+            "MAT012",
+            "MAT017A",
+            "MAT019A",
+            "MAT021A"
+        ],
+        "duplicateCredit": false,
+        "minScore": 4,
+        "maxScore": 5
+    },
+    {
+        "name": "Calculus BC",
+        "units": 8,
+        "courses": [],
+        "duplicateCredit": false,
+        "minScore": 3,
+        "maxScore": 3
+    },
+    {
+        "name": "Calculus BC",
+        "units": 8,
+        "courses": [
+            "MAT012",
+            "MAT017A",
+            "MAT019A",
+            "MAT021A"
+        ],
+        "duplicateCredit": false,
+        "minScore": 4,
+        "maxScore": 4
+    },
+    {
+        "name": "Calculus BC",
+        "units": 8,
+        "courses": [
+            "MAT012",
+            "MAT017A",
+            "MAT019A",
+            "MAT019B",
+            "MAT021A",
+            "MAT021B",
+            "MAT021M"
+        ],
+        "duplicateCredit": false,
+        "minScore": 5,
+        "maxScore": 5
+    },
+    {
+        "name": "Chemistry",
+        "units": 8,
+        "courses": [
+            "CHE010"
+        ],
+        "duplicateCredit": false,
+        "minScore": 3,
+        "maxScore": 4
+    },
+    {
+        "name": "Chemistry",
+        "units": 8,
+        "courses": [
+            "CHE002A"
+        ],
+        "duplicateCredit": true,
+        "minScore": 5,
+        "maxScore": 5
+    },
+    {
+        "name": "Chinese Language & Culture",
+        "units": 8,
+        "courses": [],
+        "duplicateCredit": false
+    },
+    {
+        "name": "Comparative Government & Politics",
+        "units": 4,
+        "courses": [],
+        "duplicateCredit": false
+    },
+    {
+        "name": "Computer Science A",
+        "units": 8,
+        "courses": [
+            "ECS032A"
+        ],
+        "duplicateCredit": false
+    },
+    {
+        "name": "Computer Science Principles",
+        "units": 8,
+        "courses": [],
+        "duplicateCredit": false
+    },
+    {
+        "name": "Drawing",
+        "units": 8,
+        "courses": [],
+        "duplicateCredit": false
+    },
+    {
+        "name": "English Language & Composition",
+        "units": 8,
+        "courses": [],
+        "duplicateCredit": false,
+        "minScore": 3,
+        "maxScore": 3
+    },
+    {
+        "name": "English Literature & Composition",
+        "units": 8,
+        "courses": [],
+        "duplicateCredit": false,
+        "minScore": 3,
+        "maxScore": 3
+    },
+    {
+        "name": "English Language & Composition",
+        "units": 8,
+        "courses": [
+            "ENL003",
+            "UWP001"
+        ],
+        "duplicateCredit": false,
+        "minScore": 4,
+        "maxScore": 5
+    },
+    {
+        "name": "English Literature & Composition",
+        "units": 8,
+        "courses": [
+            "ENL003",
+            "UWP001"
+        ],
+        "duplicateCredit": false,
+        "minScore": 4,
+        "maxScore": 5
+    },
+    {
+        "name": "Environmental Science",
+        "units": 4,
+        "courses": [
+            "ESP010"
+        ],
+        "duplicateCredit": false
+    },
+    {
+        "name": "European History",
+        "units": 8,
+        "courses": [
+            "HIS004B",
+            "HIS004C"
+        ],
+        "duplicateCredit": true
+    },
+    {
+        "name": "French Language & Culture",
+        "units": 8,
+        "courses": [
+            "FRE003"
+        ],
+        "duplicateCredit": false,
+        "minScore": 3,
+        "maxScore": 3
+    },
+    {
+        "name": "French Language & Culture",
+        "units": 8,
+        "courses": [
+            "FRE021"
+        ],
+        "duplicateCredit": false,
+        "minScore": 4,
+        "maxScore": 4
+    },
+    {
+        "name": "French Language & Culture",
+        "units": 8,
+        "courses": [
+            "FRE022"
+        ],
+        "duplicateCredit": false,
+        "minScore": 5,
+        "maxScore": 5
+    },
+    {
+        "name": "German Language & Culture",
+        "units": 8,
+        "courses": [
+            "GER003"
+        ],
+        "duplicateCredit": false,
+        "minScore": 3,
+        "maxScore": 3
+    },
+    {
+        "name": "German Language & Culture",
+        "units": 8,
+        "courses": [
+            "GER020"
+        ],
+        "duplicateCredit": false,
+        "minScore": 4,
+        "maxScore": 4
+    },
+    {
+        "name": "German Language & Culture",
+        "units": 8,
+        "courses": [
+            "GER021"
+        ],
+        "duplicateCredit": false,
+        "minScore": 5,
+        "maxScore": 5
+    },
+    {
+        "name": "Human Geography",
+        "units": 4,
+        "courses": [
+            "LED010"
+        ],
+        "duplicateCredit": true
+    },
+    {
+        "name": "Italian Language & Culture",
+        "units": 8,
+        "courses": [
+            "ITA003"
+        ],
+        "duplicateCredit": false,
+        "minScore": 3,
+        "maxScore": 3
+    },
+    {
+        "name": "Italian Language & Culture",
+        "units": 8,
+        "courses": [
+            "ITA021"
+        ],
+        "duplicateCredit": false,
+        "minScore": 4,
+        "maxScore": 4
+    },
+    {
+        "name": "Italian Language & Culture",
+        "units": 8,
+        "courses": [
+            "ITA022"
+        ],
+        "duplicateCredit": false,
+        "minScore": 5,
+        "maxScore": 5
+    },
+    {
+        "name": "Japanese Language & Culture",
+        "units": 8,
+        "courses": [],
+        "duplicateCredit": false
+    },
+    {
+        "name": "Latin",
+        "units": 8,
+        "courses": [
+            "LAT002"
+        ],
+        "duplicateCredit": false
+    },
+    {
+        "name": "Macroeconomics",
+        "units": 4,
+        "courses": [
+            "ECN001B"
+        ],
+        "duplicateCredit": true
+    },
+    {
+        "name": "Microeconomics",
+        "units": 4,
+        "courses": [
+            "ECN001A"
+        ],
+        "duplicateCredit": true
+    },
+    {
+        "name": "Music Theory",
+        "units": 8,
+        "courses": [
+            "MUS003A",
+            "MUS003B"
+        ],
+        "duplicateCredit": false
+    },
+    {
+        "name": "Physics 1",
+        "units": 8,
+        "courses": [],
+        "duplicateCredit": false,
+        "minScore": 3,
+        "maxScore": 3
+    },
+    {
+        "name": "Physics 1",
+        "units": 8,
+        "courses": [
+            "PHY001A",
+            "PHY001B"
+        ],
+        "duplicateCredit": false,
+        "minScore": 4,
+        "maxScore": 5
+    },
+    {
+        "name": "Physics 2",
+        "units": 8,
+        "courses": [],
+        "duplicateCredit": false,
+        "minScore": 3,
+        "maxScore": 3
+    },
+    {
+        "name": "Physics 2",
+        "units": 8,
+        "courses": [
+            "PHY001A"
+        ],
+        "duplicateCredit": false,
+        "minScore": 4,
+        "maxScore": 5
+    },
+    {
+        "name": "Physics C: Mechanics",
+        "units": 4,
+        "courses": [],
+        "duplicateCredit": false,
+        "minScore": 3,
+        "maxScore": 3
+    },
+    {
+        "name": "Physics C: Mechanics",
+        "units": 4,
+        "courses": [
+            "PHY001A"
+        ],
+        "duplicateCredit": false,
+        "minScore": 4,
+        "maxScore": 5
+    },
+    {
+        "name": "Physics C: Electricity & Magnetism",
+        "units": 4,
+        "courses": [],
+        "duplicateCredit": false
+    },
+    {
+        "name": "Psychology",
+        "units": 4,
+        "courses": [],
+        "duplicateCredit": false,
+        "minScore": 3,
+        "maxScore": 4
+    },
+    {
+        "name": "Psychology",
+        "units": 4,
+        "courses": [
+            "PSC001"
+        ],
+        "duplicateCredit": false,
+        "minScore": 5,
+        "maxScore": 5
+    },
+    {
+        "name": "Spanish Language & Culture",
+        "units": 8,
+        "courses": [
+            "SPA021"
+        ],
+        "duplicateCredit": false,
+        "minScore": 3,
+        "maxScore": 3
+    },
+    {
+        "name": "Spanish Language & Culture",
+        "units": 8,
+        "courses": [
+            "SPA022"
+        ],
+        "duplicateCredit": false,
+        "minScore": 4,
+        "maxScore": 4
+    },
+    {
+        "name": "Spanish Language & Culture",
+        "units": 8,
+        "courses": [
+            "SPA023"
+        ],
+        "duplicateCredit": false,
+        "minScore": 5,
+        "maxScore": 5
+    },
+    {
+        "name": "Spanish Literature & Culture",
+        "units": 8,
+        "courses": [
+            "SPA023"
+        ],
+        "duplicateCredit": false,
+        "minScore": 3,
+        "maxScore": 3
+    },
+    {
+        "name": "Spanish Literature & Culture",
+        "units": 8,
+        "courses": [
+            "SPA024"
+        ],
+        "duplicateCredit": false,
+        "minScore": 4,
+        "maxScore": 5
+    },
+    {
+        "name": "Statistics",
+        "units": 4,
+        "courses": [],
+        "duplicateCredit": false,
+        "minScore": 3,
+        "maxScore": 3
+    },
+    {
+        "name": "Statistics",
+        "units": 4,
+        "courses": [
+            "STA013"
+        ],
+        "duplicateCredit": true,
+        "minScore": 4,
+        "maxScore": 5
+    },
+    {
+        "name": "United States Government & Politics",
+        "units": 4,
+        "courses": [],
+        "duplicateCredit": false
+    },
+    {
+        "name": "United States History",
+        "units": 8,
+        "courses": [
+            "HIS017A",
+            "HIS017B"
+        ],
+        "duplicateCredit": true
+    },
+    {
+        "name": "World History: Modern",
+        "units": 8,
+        "courses": [
+            "HIS010B",
+            "HIS010C"
+        ],
+        "duplicateCredit": true
+    }
+]

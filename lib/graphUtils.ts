@@ -1,7 +1,5 @@
 import dagre from 'dagre';
 import { Node, Edge } from '@xyflow/react';
-import getCourseInfo, { getCoursesInfo } from './getCourseInfo';
-import { info } from 'console';
 import { CoursePrerequiste } from './course';
 
 export function buildGraphTree(plannedCourses: any[]) {

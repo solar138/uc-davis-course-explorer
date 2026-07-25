@@ -68,7 +68,7 @@ async function downloadIndex(url = "https://catalog.ucdavis.edu/departments-prog
     }
 }
 
-function parsePage(page: string, file: string, url?:string) {
+function parsePage(page: string, file: string, url?: string) {
     const $page = cheerio.load(page, { xml: true });
     const requirements = $page("requirementstext");
     const information = $page("informationtext");
@@ -109,7 +109,7 @@ function parseDescription(html: string) {
             }
 
             description = text;
-            return false; 
+            return false;
         });
     } else {
         console.log("no program header found");
@@ -117,93 +117,239 @@ function parseDescription(html: string) {
     return description;
 }
 
+const wordToNumber: Record<string, number> = {
+  one: 1, two: 2, three: 3, four: 4, five: 5,
+  six: 6, seven: 7, eight: 8, nine: 9, ten: 10,
+  eleven: 11, twelve: 12, thirteen: 13, fourteen: 14, fifteen: 15,
+  sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19, twenty: 20
+};
+
+function parseRequirementNumber(val: string): number {
+  const lowerVal = val.toLowerCase();
+  return wordToNumber[lowerVal] !== undefined ? wordToNumber[lowerVal] : parseInt(lowerVal, 10);
+}
+
 function parseRequirements(html: string) {
+    if (!html) return [];
+
     const $ = cheerio.load(html);
     const requirements: any[] = [];
+
     let currentCategory: any = null;
     let currentSubcategory: any = null;
-
-    // Track if we are currently building an "OR" array block
     let isOrBlock = false;
+    let activeChoiceGroup: any = null;
 
-    $('table.sc_courselist tbody tr').each((_, row) => {
-        const $row = $(row);
-        const text = $row.text().trim();
-        const commentText = $row.find('.courselistcomment').text().trim() || text;
+    $('table.sc_courselist').each((_, table) => {
+        const $table = $(table);
 
-        // 1. Match Main Categories
-        if ($row.hasClass('areaheader')) {
-            currentCategory = { category: commentText, subcategories: [] };
-            requirements.push(currentCategory);
-            currentSubcategory = null;
+        // 1. Table Boundaries: Force close any active choice groups from the previous table
+        if (activeChoiceGroup && currentSubcategory) {
+            if (activeChoiceGroup.options.length === 0) {
+                currentSubcategory.courses.pop();
+                currentSubcategory.courses.push(`NOTE: ${activeChoiceGroup.instruction}`);
+            }
+        }
+        activeChoiceGroup = null;
+        isOrBlock = false;
+
+        // 2. THE FIX: Look at the DOM element immediately preceding the table!
+        const precedingText = $table.prev('h2, h3, h4').text().trim();
+        const lowerPreceding = precedingText.toLowerCase();
+
+        // skip not required courses
+        if (lowerPreceding.includes("recommended")) {
             return;
         }
 
-        // 2. Match Subcategories
-        if ($row.hasClass('areasubheader')) {
-            currentSubcategory = { header: commentText, courses: [] };
-            if (currentCategory) currentCategory.subcategories.push(currentSubcategory);
-            return;
-        }
+        // If the header above the table indicates a track or emphasis, create a new Subcategory!
+        if (lowerPreceding.includes('track') ||
+            lowerPreceding.includes('emphasis') ||
+            lowerPreceding.includes('concentration')) {
 
-        // 3. Handle the "OR" logic
-        if (text === 'OR' || commentText.includes('OR') || commentText.includes('Choose at least one')) {
-            isOrBlock = true;
-            return;
-        }
+            currentSubcategory = { header: precedingText, courses: [] };
 
-        // 4. Extract standard courses
-        const courseSlug = $row.find('.codecol').text()
-            .replace(/\s+/g, '')
-            .replace(/^or/i, '');
-
-        // IF WE FOUND A SPECIFIC COURSE:
-        if (courseSlug) {
             if (!currentCategory) {
                 currentCategory = { category: "Program Requirements", subcategories: [] };
                 requirements.push(currentCategory);
             }
-            if (!currentSubcategory) {
-                currentSubcategory = { header: "Core Requirements", courses: [] };
-                currentCategory.subcategories.push(currentSubcategory);
-            }
+            currentCategory.subcategories.push(currentSubcategory);
+        }
 
-            if (isOrBlock) {
-                const lastCourse = currentSubcategory.courses.pop();
-                if (lastCourse !== undefined) {
-                    Array.isArray(lastCourse)
-                        ? currentSubcategory.courses.push([...lastCourse, courseSlug])
-                        : currentSubcategory.courses.push([lastCourse, courseSlug]);
-                } else {
-                    currentSubcategory.courses.push(courseSlug);
+        console.log("table found", precedingText);
+
+        // 3. Loop through the rows of THIS specific table
+        $table.find('tbody tr').each((_, row) => {
+            const $row = $(row);
+            const text = $row.text().replace(/\u00a0/g, ' ').trim();
+            const commentText = $row.find('.courselistcomment').text().replace(/\u00a0/g, ' ').trim() || text;
+            const hasCode = $row.find('.codecol').length > 0;
+
+            if (text.includes('Total Units') || commentText.includes('Total Units')) return;
+
+            // A. Match Main Categories
+            if ($row.hasClass('areaheader')) {
+                if (activeChoiceGroup && activeChoiceGroup.options.length === 0 && currentSubcategory) {
+                    currentSubcategory.courses.pop();
+                    currentSubcategory.courses.push(`NOTE: ${activeChoiceGroup.instruction}`);
                 }
-                isOrBlock = false;
-            } else {
-                currentSubcategory.courses.push(courseSlug);
-            }
-        }
-        // FIX 4: THE "TEXT BLOCK" FALLBACK
-        // If there is no specific course code, but there is a descriptive comment
-        else if (commentText && !commentText.includes('Total Units')) {
-
-            // Still need our implicit category fallbacks!
-            if (!currentCategory) {
-                currentCategory = { category: "Program Requirements", subcategories: [] };
+                currentCategory = { category: commentText, subcategories: [] };
                 requirements.push(currentCategory);
-            }
-            if (!currentSubcategory) {
-                currentSubcategory = { header: "Core Requirements", courses: [] };
-                currentCategory.subcategories.push(currentSubcategory);
+                currentSubcategory = null;
+                activeChoiceGroup = null;
+                return;
             }
 
-            // Prefix it with "NOTE: " so your frontend knows it's an instruction, not a database slug
-            currentSubcategory.courses.push(`NOTE: ${commentText}`);
-        }
-    });
+            // B. Match Subcategories
+            if ($row.hasClass('areasubheader')) {
+                if (activeChoiceGroup && activeChoiceGroup.options.length === 0 && currentSubcategory) {
+                    currentSubcategory.courses.pop();
+                    if (!activeChoiceGroup.instruction.includes("total"))
+                        currentSubcategory.courses.push(`NOTE: ${activeChoiceGroup.instruction}`);
+                }
+                const cleanHeader = commentText
+                    .replace(/^NOTE:\s*/i, '') // Removes "NOTE: " prefix
+                    .replace(/[,:-]?\s*(choose|select)\s+.*$/i, '') // Strips ", choose one series..." or " - Select two"
+                    .replace(/\s*\([^)]*(quarter|spring|winter|fall|summer|only)[^)]*\)/gi, '') // Strips scheduling like "(Fall only)"
+                    .replace(/:\s*$/, '') // Removes any leftover trailing colons
+                    .trim();
+
+                currentSubcategory = { header: cleanHeader, courses: [] };
+
+                const $hoursCol = $row.find('.hourscol');
+                if ($hoursCol.length > 0 && $hoursCol[0].children.length > 0) {
+                    if (currentSubcategory && !currentSubcategory.units) {
+                        const data = ($hoursCol[0].children[0] as any).data.split("-");
+                        currentSubcategory.units = data.length > 1 ? data.map((x: string) => +x) : +data[0];
+                    }
+                }
+
+                if (currentCategory) {
+                    currentCategory.subcategories.push(currentSubcategory);
+                } else {
+                    currentCategory = { category: "Program Requirements", subcategories: [currentSubcategory] };
+                    requirements.push(currentCategory);
+                }
+                activeChoiceGroup = null;
+                return;
+            }
+
+            // 4. "Choose X" Instructions -> Opens a new Choice Object
+            const lowerComment = commentText.toLowerCase();
+
+            if (!hasCode && (lowerComment.includes('choose') || lowerComment.includes('select'))) {
+                if (!currentCategory) {
+                    currentCategory = { category: "Program Requirements", subcategories: [] };
+                    requirements.push(currentCategory);
+                }
+                if (!currentSubcategory) {
+                    currentSubcategory = { header: "Core Requirements", courses: [] };
+                    currentCategory.subcategories.push(currentSubcategory);
+                }
+
+                // Automatically close previous empty groups
+                if (activeChoiceGroup && activeChoiceGroup.options.length === 0) {
+                    currentSubcategory.courses.pop();
+                    currentSubcategory.courses.push(`NOTE: ${activeChoiceGroup.instruction}`);
+                }
+
+                // Build a regex that looks for digits OR our spelled-out words
+                const numberWords = Object.keys(wordToNumber).join('|');
+                const unitRegex = new RegExp(`(\\d+|${numberWords})\\s+unit`, 'i');
+                const courseRegex = new RegExp(`(\\d+|${numberWords})\\s+course`, 'i');
+
+                const unitMatch = lowerComment.match(unitRegex);
+                const courseMatch = lowerComment.match(courseRegex);
+
+                activeChoiceGroup = {
+                    type: "choice",
+                    instruction: commentText,
+                    units_required: unitMatch ? parseRequirementNumber(unitMatch[1]) : null,
+                    courses_required: courseMatch ? parseRequirementNumber(courseMatch[1]) : null,
+                    options: []
+                };
+
+                currentSubcategory.courses.push(activeChoiceGroup);
+                return;
+            }
+            // 5. Old explicit "OR" text rows (Keep this just in case)
+            if (text === 'OR' || commentText === 'OR') {
+                if (!activeChoiceGroup) isOrBlock = true;
+                return;
+            }
+
+            // 6. Course Codes
+            const $codeCol = $row.find('.codecol');
+            if ($codeCol.length > 0) {
+                const codeText = $codeCol.text().replace(/\s+/g, '');
+
+                // THE FIX: Check for the CourseLeaf 'orclass' or the inline "or" prefix
+                const isOrCourse = $row.hasClass('orclass') || codeText.toLowerCase().startsWith('or');
+
+                // Now it's safe to strip the "or" prefix to get the clean slug
+                const rawSlug = codeText.replace(/^or/i, '');
+
+                if (rawSlug && !rawSlug.includes("DISCONTINUED")) {
+                    if (!currentCategory) {
+                        currentCategory = { category: "Program Requirements", subcategories: [] };
+                        requirements.push(currentCategory);
+                    }
+                    if (!currentSubcategory) {
+                        currentSubcategory = { header: "Core Requirements", courses: [] };
+                        currentCategory.subcategories.push(currentSubcategory);
+                    }
+
+                    // Convert sequences like "BIS002A&BIS002B" to structured AND objects
+                    let parsedCourse: any = rawSlug;
+                    if (rawSlug.includes('&')) {
+                        parsedCourse = { type: "and", courses: rawSlug.split('&') };
+                    }
+
+                    if (activeChoiceGroup) {
+                        activeChoiceGroup.options.push(parsedCourse);
+                    }
+                    else if (isOrCourse || isOrBlock) {
+                        // If it's an alternate course, group it with the previous course!
+                        const lastCourse = currentSubcategory.courses.pop();
+                        if (lastCourse !== undefined) {
+                            Array.isArray(lastCourse)
+                                ? currentSubcategory.courses.push([...lastCourse, parsedCourse])
+                                : currentSubcategory.courses.push([lastCourse, parsedCourse]);
+                        } else {
+                            currentSubcategory.courses.push(parsedCourse);
+                        }
+                        isOrBlock = false;
+                    }
+                    else {
+                        currentSubcategory.courses.push(parsedCourse);
+                    }
+                    return;
+                }
+            }
+            // F. Extract Text Blocks
+            else if (commentText) {
+                if (!currentCategory) {
+                    currentCategory = { category: "Program Requirements", subcategories: [] };
+                    requirements.push(currentCategory);
+                }
+                if (!currentSubcategory) {
+                    currentSubcategory = { header: "Core Requirements", courses: [] };
+                    currentCategory.subcategories.push(currentSubcategory);
+                }
+
+                if (activeChoiceGroup) {
+                    activeChoiceGroup.options.push(`NOTE: ${commentText}`);
+                } else {
+                    currentSubcategory.courses.push(`NOTE: ${commentText}`);
+                }
+            }
+        }); // End of Row Loop
+    }); // End of Table Loop
+
     return requirements;
 }
 
-async function pushToDb(requirements: any, code: string, name: string, description = "", url="",school = "ucdavis") {
+async function pushToDb(requirements: any, code: string, name: string, description = "", url = "", school = "ucdavis") {
     name = he.decode(name);
     var type = "unknown";
     const nameLower = name.toLowerCase();

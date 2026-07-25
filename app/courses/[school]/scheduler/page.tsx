@@ -28,7 +28,7 @@ export default async function CourseScheduler({ params } : SchoolProps ) {
 
   return (
     <div className="flex flex-col w-full h-screen overflow-hidden text-gray-900 bg-white">
-      <Header> Course Explorer —  <span className="ml-2 text-gray-500">{schoolInfo.shortName}</span> </Header> 
+      <Header> Course Scheduler —  <span className="ml-2 text-gray-500">{schoolInfo.shortName}</span> </Header> 
       <main className="flex-1 flex overflow-hidden min-h-0">
           <CourseSearch school={schoolInfo}/>
 

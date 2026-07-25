@@ -20,12 +20,16 @@ type GraphState = {
   removeCourse: (courseCode: string) => void;
   clearCourses: () => void;
   setInspectedCourse: (course: any | null) => void;
+  school: string;
+  setSchool: (school: string) => void;
 };
 
 export const useGraphStore = create<GraphState>((set, get) => ({
   nodes: [],
   edges: [],
   inspectedCourse: null,
+  school: "",
+  setSchool: (school: string) => set({ school }),
   
   onNodesChange: (changes) => {
     set({ nodes: applyNodeChanges(changes, get().nodes) });
@@ -38,10 +42,10 @@ export const useGraphStore = create<GraphState>((set, get) => ({
     set({ nodes: [], edges: [] });
   },
   removeCourse: async (courseCode : string) => {
-    const course = await getCourseInfo(courseCode);
+    const { nodes, school } = get();
+    const course = await getCourseInfo(school, courseCode);
     if (course == null) return console.log("Course not found " + courseCode);
     
-    const { nodes } = get();
     const filteredNodes = nodes.filter(n => n.id !== course.slug);
     
     const { nodes: layoutedNodes, edges: layoutedEdges } = getLayoutedElements(
@@ -53,10 +57,10 @@ export const useGraphStore = create<GraphState>((set, get) => ({
   },
 
   addCourse: async (courseCode : string) => {
-    const course = await getCourseInfo(courseCode);
+    const { nodes, school } = get();
+    const course = await getCourseInfo(school, courseCode);
     if (course == null) return console.log("Course not found " + courseCode);
     
-    const { nodes } = get();
     if (nodes.some(n => n.id === String(course.slug) && n.data.status === 'planned')) return console.log("Course already exists");
     const plannedCourses = nodes
       .filter(n => n.data.status === 'planned' && n.id !== courseCode)

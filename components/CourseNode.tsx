@@ -1,7 +1,6 @@
 import { Handle, Position } from '@xyflow/react';
 import { useState } from 'react';
 import { useGraphStore } from '@/store/useGraphStore';
-import getCourseInfo from '@/lib/getCourseInfo';
 
 export default function CourseNode({ data }: { data: any }) {
   const addCourse = useGraphStore((state) => state.addCourse);
