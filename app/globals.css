@@ -106,3 +106,22 @@ a {
   color: #e2e2e2; 
   cursor: default;
 }
+
+.button.red {
+  background-color: #d32a2a;
+  color: #ffffff;  
+}
+.button.red:hover {
+  background-color: #ff7474;
+  color: #ffffff; 
+}
+.button.red:disabled {
+  background-color:#c5a1a1;
+  color: #e2e2e2; 
+  cursor: default;
+}
+.button.pill { 
+  display: inline-block;
+  padding-top: 2px;
+  padding-bottom: 2px;
+} 
