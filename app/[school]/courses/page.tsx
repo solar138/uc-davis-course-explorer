@@ -1,11 +1,28 @@
 import CourseGraph from "@/components/CourseGraph";
 import { CourseInspector } from "@/components/CourseInspector";
 import CourseSearch from "@/components/CourseSearch";
-import { redirect } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { Footer } from "../../../components/Footer";
-import getSchoolCourses from "@/lib/getSchoolCourses";
 import getSchoolInfo from "@/lib/getSchoolInfo";
 import Header from "@/components/Header";
+import { Metadata } from "next";
+
+export async function generateMetadata({ params }: { params: Promise<{ school: string }> }): Promise<Metadata> {
+  var args = await params;
+
+  if (args.school == undefined || args.school.length == 0) return { title: "404 School Not Found" }
+
+  const schoolInfo = await getSchoolInfo(args.school);
+
+  if (schoolInfo == null) {
+    notFound();
+  }
+
+  return {
+    title: schoolInfo.shortName + " | Course Explorer"
+  }
+}
+
 
 export default async function CourseExplorer({ params } : { params : Promise<{ school: string }> }) {
   var args = await params;
@@ -34,7 +51,7 @@ export default async function CourseExplorer({ params } : { params : Promise<{ s
           <div className="flex-1 relative bg-gray-100 p-4"><CourseGraph courses={[]} />
           </div>
 
-          <CourseInspector courseId={selectedCourse} addTarget={"graph"} showUnlocks={true} />
+          <CourseInspector courseId={selectedCourse} addTarget={"graph"} school={schoolInfo} />
       </main>
       <Footer/>
     </div>
