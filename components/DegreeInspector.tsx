@@ -6,6 +6,8 @@ import { Course, Degree, School } from "@prisma/client";
 import getDegreeInfo from "@/lib/getDegreeInfo";
 import NestedArray from "@/lib/nestedArray";
 import { getCoursesInfo } from "@/lib/getCourseInfo";
+import { CourseInspector } from "./CourseInspector";
+import { useGraphStore } from "@/store/useGraphStore";
 
 export function DegreeInspector({ school }: { school: School }) {
 
@@ -14,6 +16,7 @@ export function DegreeInspector({ school }: { school: School }) {
   const degrees = useDegreeStore((state) => state.degreePrograms);
   const addDegree = useDegreeStore((state) => state.addDegree);
   const removeDegree = useDegreeStore((state) => state.removeDegree);
+  const setInspectedCourse = useGraphStore((state) => state.setInspectedCourse);
   const [degree, setDegree] = useState<Degree>();
   const [courses, setCourses] = useState<Record<string, Course>>();
 
@@ -38,13 +41,12 @@ export function DegreeInspector({ school }: { school: School }) {
   const totalUnits = 0;
 
   if (degree == null) {
-    return <div className="border-r border-gray-200 bg-white overflow-y-auto transition ease-in duration-300 w-0 opacity-0">
-      <h2 className="text-xl font-bold">{degreeId == undefined ? "No Degree selected" : "Loading..."}</h2>
-    </div>;
+    return <CourseInspector addTarget="planner" school={school} />
   }
   const requirements = degree.requirements as DegreeRequirement[];
   return <div className="flex flex-col w-1/4 min-w-[500px] border-r border-gray-200 bg-white p-6 overflow-y-auto">
-    <h2 className="text-xl font-bold">{degree.shortName ?? degree.name}<button className="float-right cursor-pointer hover:text-red-600 transition-colors" title="Close" onClick={() => setInspectedDegree("")}>X</button></h2>
+    <h2 className="text-xl font-bold">{degree.shortName ?? degree.name}
+      <button className="float-right cursor-pointer hover:text-red-600 transition-colors" title="Close" onClick={() => {setInspectedDegree(""); setInspectedCourse(null);}}>X</button></h2>
     <p className="text-gray-500">{degree.name}</p>
     <p className="italic mt-4">{degree.description}</p>
     {degree.url && <p>Read more: <span><a href={degree.url}>{school.shortName} Catalog</a></span></p>}

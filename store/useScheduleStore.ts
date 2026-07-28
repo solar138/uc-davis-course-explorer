@@ -1,3 +1,4 @@
+import { Course } from '@prisma/client';
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
@@ -8,7 +9,7 @@ type ScheduleState = {
     setHoverCrn: (crn: number) => void;
     activeScheduling: string | null; 
     setActiveScheduling: (courseCode: string | null) => void;
-    addCourseToSchedule: (courseCode: string, section?: number) => void;
+    addCourseToSchedule: (courseCode: Course | string, section?: number) => void;
     removeCourseFromSchedule: (courseCode: string) => void;
     rescheduleCourse: (courseCode: string, newSection: number) => void;
     clearSchedule: () => void;
@@ -22,7 +23,7 @@ export const useScheduleStore = create(persist<ScheduleState>((set) => ({
   setHoverCrn: (crn) => set({ hoverCrn: crn }),
   activeScheduling: null,
   setActiveScheduling: (courseCode: string | null) => set({ activeScheduling: courseCode }),
-  addCourseToSchedule: (courseCode : string, section : number = 0) => set((state) => ({ schedule: { ...state.schedule, [courseCode]: section} })),
+  addCourseToSchedule: (courseCode : Course | string, section : number = 0) => set((state) => ({ schedule: { ...state.schedule, [typeof(courseCode) == "string" ? courseCode : courseCode.slug]: section} })),
   removeCourseFromSchedule: (courseCode : string) => set((state) => {
     const newSchedule = { ...state.schedule };
     delete newSchedule[courseCode];

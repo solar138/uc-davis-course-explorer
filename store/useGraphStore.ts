@@ -9,6 +9,7 @@ import {
 } from '@xyflow/react';
 import getCourseInfo from '@/lib/getCourseInfo';
 import { buildGraphTree, getLayoutedElements } from '@/lib/graphUtils';
+import { Course } from '@prisma/client';
 
 type GraphState = {
   nodes: Node[];
@@ -16,7 +17,7 @@ type GraphState = {
   inspectedCourse : any | null;
   onNodesChange: OnNodesChange;
   onEdgesChange: OnEdgesChange;
-  addCourse: (courseCode: string) => void;
+  addCourse: (course: Course) => void;
   removeCourse: (courseCode: string) => void;
   clearCourses: () => void;
   setInspectedCourse: (course: any | null) => void;
@@ -56,9 +57,9 @@ export const useGraphStore = create<GraphState>((set, get) => ({
     set({ nodes: layoutedNodes, edges: layoutedEdges });
   },
 
-  addCourse: async (courseCode : string) => {
-    const { nodes, school } = get();
-    const course = await getCourseInfo(school, courseCode);
+  addCourse: async (course : Course) => {
+    const courseCode = course.slug;
+    const { nodes } = get();
     if (course == null) return console.log("Course not found " + courseCode);
     
     if (nodes.some(n => n.id === String(course.slug) && n.data.status === 'planned')) return console.log("Course already exists");

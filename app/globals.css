@@ -121,7 +121,44 @@ a {
   cursor: default;
 }
 .button.pill { 
-  display: inline-block;
+  display: inline-block; 
   padding-top: 2px;
   padding-bottom: 2px;
 } 
+
+.header-nav a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+.header-nav a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #2a65d3;
+  transform-origin: bottom left; 
+  transition: transform 0.2s ease-out; 
+  transform: scaleX(0); 
+}
+
+.header-nav a:hover::after {
+  transform: scaleX(1); 
+}
+
+.header-nav a.active::after {
+  transform: scaleX(1); 
+}
+ 
+.header-nav a:hover {
+  transition: all 0.2s;
+  color: #2a65d3; 
+}
+
+.header-nav a.active {
+  color: #2a65d3; 
+  font-weight: bold;
+}

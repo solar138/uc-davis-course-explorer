@@ -43,7 +43,7 @@ export default function CourseSectionList({ addTarget, schoolInfo } : { addTarge
     }, [activeScheduling, sections, sectionsCourse]);
 
     if (!activeScheduling) {
-        return <CourseInspector addTarget={addTarget} showUnlocks={false}/>;
+        return <CourseInspector addTarget={addTarget} school={schoolInfo}/>;
     }
     
     return <div className="w-1/4 min-w-[500px] border-r border-gray-200 bg-white p-6 overflow-y-auto">

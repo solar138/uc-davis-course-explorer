@@ -72,6 +72,7 @@ model School {
   shortName       String     // eg. UC Davis
   primaryColor    String?    // main element colors
   secondaryColor  String?    // secondary element colors
+  transferURL     String?    // URL for community college transfer credits
 
   courses         Course[]
   instructors     Instructor[]
