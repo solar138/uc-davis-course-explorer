@@ -20,7 +20,8 @@ export async function generateMetadata({ params }: { params: Promise<{ school: s
   }
 
   return {
-    title: schoolInfo.shortName + " | Course Scheduler"
+    title: schoolInfo.shortName + " | Course Scheduler",
+    description: "Automatically generate schedules from courses with customizable parameters."
   }
 }
 

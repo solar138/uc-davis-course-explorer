@@ -19,7 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ school: s
   }
 
   return {
-    title: schoolInfo.shortName + " | Degree Planner"
+    title: schoolInfo.shortName + " | Degree Planner",
+    description: "Calculate exam credits, add transfers, and choose majors and minors."
   }
 }
 

@@ -19,7 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ school: s
   }
 
   return {
-    title: schoolInfo.shortName + " | Course Explorer"
+    title: schoolInfo.shortName + " | Course Explorer",
+    description: "View course prerequisites in an interactive tree."
   }
 }
 
