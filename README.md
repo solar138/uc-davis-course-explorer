@@ -20,7 +20,7 @@ The hardest part is reliably scraping up-to-date information about courses.
 - Export CRNs to quickly load the schedule to register courses
 - Synchronize multiple student schedules
 
-Officially hosted at https://uc-davis-course-explorer.vercel.app/courses/ucdavis/scheduler
+Officially hosted at https://uc-davis-course-explorer.vercel.app/ucdavis/scheduler
 
 ### Demo
 
