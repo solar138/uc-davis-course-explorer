@@ -69,7 +69,7 @@ export default function CourseSectionList({ addTarget, schoolInfo } : { addTarge
                         <h3 className="text-center underline cursor-pointer hover:text-blue-600 transition-colors" title="Click to unschedule" onClick={() => {
                         rescheduleCourse(activeScheduling, 0);
                         setActiveScheduling(null);}}>Unschedule</h3></div>}
-                    {sections.sort((a, b) => +b.crn == schedule[activeScheduling] ? 1 : -1).map((section) => (
+                    {sections.sort((a, b) => +b.crn == schedule[activeScheduling] ? 1 : +a.crn == schedule[activeScheduling] ? -1 : +a.crn - +b.crn).map((section) => (
                         <div key={section.crn} style={{ 
                                 backgroundColor: +section.crn == schedule[activeScheduling] ? "#f3f6ff" : "white",
                                 color: +section.crn == schedule[activeScheduling] ? "#3155a3" : "black" }} className="border-y border-gray-200 py-2 px-3 hover:bg-gray-100 transition-colors rounded"
