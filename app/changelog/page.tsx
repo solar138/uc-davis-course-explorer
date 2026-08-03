@@ -4,10 +4,10 @@ import Header from "@/components/Header";
 export default async function CourseExplorer() {
 
   return (
-    <div className="flex flex-col w-full h-screen overflow-hidden bg-white">
+    <div className="flex flex-col w-full h-screen bg-white">
       <Header> Changelog</Header> 
-      <main className="flex-1 flex overflow-hidden min-h-0">
-        <article className="p-4 text-justify w-full max-w-2xl mx-auto gap-4 flex flex-col">
+      <main className="flex-1 flex min-h-0 overflow-y-scroll">
+        <article className="p-4 text-justify w-full max-w-2xl h-fit mx-auto gap-4 flex flex-col">
           <ChangelogEntry date="Aug 2, 2026" changes={["Fix course section display issues", "Fixed some typos in the changelog"]}/>
           <ChangelogEntry date="July 28, 2026" changes={["Add transfer credit tab to degree planner"]}/>
           <ChangelogEntry date="July 27, 2026" changes={["Add navigation tabs to header"]}/>
