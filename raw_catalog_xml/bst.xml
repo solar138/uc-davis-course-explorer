@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<courseleaf>
+
+<title>Biostatistics (BST)</title>
+
+
+<text>
+<![CDATA[  
+<div class="sc_sccoursedescs">
+<div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>BST 222</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Biostatistics: Survival Analysis</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Incomplete data; life tables; nonparametric methods; parametric methods; accelerated failure time models; proportional hazards models; partial likelihood; advanced topics.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i><span class="code_bubble" data-code-bubble="STA 131C">STA 131C</span>.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 3 hour(s), Discussion/Laboratory 1 hour(s).</li>
+<li><span class="label"><em>Cross Listing:</em></span> <span class="code_bubble" data-code-bubble="STA 222">STA 222</span>.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 3 hour(s), Discussion/Laboratory 1 hour(s).<br/><em>Cross Listing: </em><span class="code_bubble" data-code-bubble="STA 222">STA 222</span>.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>BST 223</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Biostatistics: Generalized Linear Models</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent">This version has ended; see updated course, below.<br/><em>Course Description:</em> Likelihood and linear regression; generalized linear model; Binomial regression; case-control studies; dose-response and bioassay; Poisson regression; Gamma regression; quasi-likelihood models; estimating equations; multivariate GLMs.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i><span class="code_bubble" data-code-bubble="STA 131C">STA 131C</span>.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 3 hour(s), Discussion/Laboratory 1 hour(s).</li>
+<li><span class="label"><em>Cross Listing:</em></span> <span class="code_bubble" data-code-bubble="STA 223">STA 223</span>.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+
+<ul>
+<li><span class="text detail-code margin--span text--semibold text--big"><h5><span class="code_bubble" data-code-bubble="BST 223">BST 223</span> — Biostatistics: Generalized Linear Models (4 units)</h5></span></li>
+<li><span class="label"><em>Course Description:</em></span>  Likelihood and linear regression; generalized linear model; Binomial regression; case-control studies; dose-response and bioassay; Poisson regression; Gamma regression; quasi-likelihood models; estimating equations; multivariate GLMs.</li>
+<li><span class="label"><em>
+Prerequisite(s):</em></span>  <span class="code_bubble" data-code-bubble="STA 131C">STA 131C</span>.</li>
+<li><span class="label"><em>
+Learning Activities:</em></span>  Lecture 3 hour(s), Discussion/Laboratory 1 hour(s).</li>
+<li><span class="label"><em>
+Enrollment Restriction(s):</em></span>  Pass One restricted to Statistics &amp; Biostatistics graduate students; Pass Two restricted to graduate students.</li>
+<li><span class="label"><em>
+Cross Listing:</em></span>  <span class="code_bubble" data-code-bubble="STA 223">STA 223</span>.</li>
+<li><span class="label"><em>
+Grade Mode:</em></span>  Letter.</li>
+<li>This course version is effective from, and including:  Winter Quarter 2027.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 3 hour(s), Discussion/Laboratory 1 hour(s).<br/><em>Cross Listing: </em><span class="code_bubble" data-code-bubble="STA 223">STA 223</span>.<br/><em>Grade Mode: </em>Letter.</div>
+
+<div>
+<h5><span class="code_bubble" data-code-bubble="BST 223">BST 223</span> — Biostatistics: Generalized Linear Models (4 units)</h5><br/><em>Course Description:</em>  Likelihood and linear regression; generalized linear model; Binomial regression; case-control studies; dose-response and bioassay; Poisson regression; Gamma regression; quasi-likelihood models; estimating equations; multivariate GLMs.<br/><em>
+Prerequisite(s):</em>  <span class="code_bubble" data-code-bubble="STA 131C">STA 131C</span>.<br/><em>
+Learning Activities:</em>  Lecture 3 hour(s), Discussion/Laboratory 1 hour(s).<br/><em>
+Enrollment Restriction(s):</em>  Pass One restricted to Statistics &amp; Biostatistics graduate students; Pass Two restricted to graduate students.<br/><em>
+Cross Listing:</em>  <span class="code_bubble" data-code-bubble="STA 223">STA 223</span>.<br/><em>
+Grade Mode:</em>  Letter.<br/>This course version is effective from, and including:  Winter Quarter 2027.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>BST 224</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Analysis of Longitudinal Data</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Standard and advanced methodology, theory, algorithms, and applications relevant for analysis of repeated measurements and longitudinal data in biostatistical and statistical settings.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>(<span class="code_bubble" data-code-bubble="BST 222">BST 222</span> or <span class="code_bubble" data-code-bubble="STA 222">STA 222</span>); (<span class="code_bubble" data-code-bubble="BST 223">BST 223</span> or <span class="code_bubble" data-code-bubble="STA 223">STA 223</span>); <span class="code_bubble" data-code-bubble="STA 232B">STA 232B</span>; or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 3 hour(s), Discussion/Laboratory 1 hour(s).</li>
+<li><span class="label"><em>Cross Listing:</em></span> <span class="code_bubble" data-code-bubble="STA 224">STA 224</span>.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 3 hour(s), Discussion/Laboratory 1 hour(s).<br/><em>Cross Listing: </em><span class="code_bubble" data-code-bubble="STA 224">STA 224</span>.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>BST 225</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Clinical Trials</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Basic statistical principles of clinical designs, including bias, randomization, blocking, and masking. Practical applications of widely-used designs, including dose-finding, comparative and cluster randomization designs. Advanced statistical procedures for analysis of data collected in clinical trials.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i><span class="code_bubble" data-code-bubble="BST 223">BST 223</span> or <span class="code_bubble" data-code-bubble="STA 223">STA 223</span>; or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 3 hour(s), Discussion/Laboratory 1 hour(s).</li>
+<li><span class="label"><em>Cross Listing:</em></span> <span class="code_bubble" data-code-bubble="STA 225">STA 225</span>.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 3 hour(s), Discussion/Laboratory 1 hour(s).<br/><em>Cross Listing: </em><span class="code_bubble" data-code-bubble="STA 225">STA 225</span>.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>BST 226</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Statistical Methods for Bioinformatics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Standard and advanced statistical methodology, theory, algorithms, and applications relevant to the analysis of -omics data.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>BST 131C or consent of instructor; data analysis experience recommended.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 3 hour(s), Discussion/Laboratory 1 hour(s).</li>
+<li><span class="label"><em>Cross Listing:</em></span> <span class="code_bubble" data-code-bubble="STA 226">STA 226</span>.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 3 hour(s), Discussion/Laboratory 1 hour(s).<br/><em>Cross Listing: </em><span class="code_bubble" data-code-bubble="STA 226">STA 226</span>.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>BST 227</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Machine Learning in Genomics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Emerging problems in molecular biology and current machine learning-based solutions to those problem. How deep learning, kernel methods, graphical models, feature selection, non-parametric models and other techniques can be applied to application areas such as gene editing, gene network inference and analysis, chromatin state inference, cancer genomics and single cell genomics.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i><span class="code_bubble" data-code-bubble="STA 208">STA 208</span> or <span class="code_bubble" data-code-bubble="ECS 171">ECS 171</span>; or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture/Discussion 3 hour(s), Project.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture/Discussion 3 hour(s), Project.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>BST 252</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Advanced Topics in Biostatistics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Biostatistical methods and models selected from the following:  genetics, bioinformatics and genomics; longitudinal or functional data; clinical trials and experimental design; analysis of environmental data; dose-response, nutrition and toxicology; survival analysis; observational studies and epidemiology; computer-intensive or Bayesian methods in biostatistics.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i><span class="code_bubble" data-code-bubble="BST 222">BST 222</span>; <span class="code_bubble" data-code-bubble="BST 223">BST 223</span>.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 3 hour(s), Discussion/Laboratory 1 hour(s).</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated when topic differs with consent of advisor.</li>
+<li><span class="label"><em>Cross Listing:</em></span> <span class="code_bubble" data-code-bubble="STA 252">STA 252</span>.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 3 hour(s), Discussion/Laboratory 1 hour(s).<br/><em>Repeat Credit: </em>May be repeated when topic differs with consent of advisor.<br/><em>Cross Listing: </em><span class="code_bubble" data-code-bubble="STA 252">STA 252</span>.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>BST 290</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Seminar in Biostatistics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1 unit)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Seminar on advanced topics in the field of biostatistics. Presented by members of the Biostatistics Graduate Group and other guest speakers.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Seminar 1 hour(s).</li>
+<li><span class="label"><em>Enrollment Restriction(s):</em></span> Restricted to graduate standing.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated 12 time(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Seminar 1 hour(s).<br/><em>Enrollment Restriction(s): </em>Restricted to graduate standing.<br/><em>Repeat Credit: </em>May be repeated 12 time(s).<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>BST 298</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Directed Group Study</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topics in Biostatistics appropriate for group study at the graduate level.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable 3-15 hour(s).</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable 3-15 hour(s).<br/><em>Repeat Credit: </em>May be repeated.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>BST 299</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Study for Biostat Graduate Students</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-12 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topics in Biostatistics appropriate for directed individual study on advanced topics not otherwise covered in the Biostatistics curriculum.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable 3-36 hour(s).</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable 3-36 hour(s).<br/><em>Repeat Credit: </em>May be repeated.<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>BST 299D</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Dissertation Research</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-12 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Research in Biostatistics under the supervision of major professor.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor; advancement to Candidacy for Ph.D.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable 3-36 hour(s).</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable 3-36 hour(s).<br/><em>Repeat Credit: </em>May be repeated.<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div></div>
+  
+]]>
+</text>
+<faculty>
+<![CDATA[
+]]>
+</faculty>
+</courseleaf>
+

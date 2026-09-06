@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<courseleaf>
+
+<title>Applied Science Engineering-Davis (EAD)</title>
+
+
+<text>
+<![CDATA[  
+<div class="sc_sccoursedescs">
+<div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 230</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Topics in Computational Fluid Dynamics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(3 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Hands-on approach to numerical methods for compressible fluid flow. Readings and discussions of solution strategies will be complemented with programming exercises and projects to give first-hand experience with performance and accuracy of several computational methods; from upwind differencing to Godunov methods.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>EAD 210A; EAD 210B; or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 3 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 3 hour(s).<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 289A</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Topics in Applied Science: Atomic, Molecular, &amp; Optical Physics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topic in Atomic, Molecular, and Optical Physics.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Graduate standing or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated 5 unit(s) per segment when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Repeat Credit: </em>May be repeated 5 unit(s) per segment when topic differs.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 289B</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Topics in Applied Science: Chemical Physics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topic in Chemical Physics.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Graduate standing or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated 5 unit(s) per segment when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Repeat Credit: </em>May be repeated 5 unit(s) per segment when topic differs.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 289C</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Computational Physics: Computational Physics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topic in Computational Physics.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Graduate standing or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated 5 unit(s) per segment when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Repeat Credit: </em>May be repeated 5 unit(s) per segment when topic differs.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 289D</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Topics in Applied Science: Biophotonics/Biotechnology</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topic in Biophotonics/Biotechnology.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Graduate standing or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated 5 unit(s) per segment when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Repeat Credit: </em>May be repeated 5 unit(s) per segment when topic differs.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 289E</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Topics in Applied Science: Materials Science</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topic in Materials Science.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Graduate standing or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated 5 unit(s) per segment when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Repeat Credit: </em>May be repeated 5 unit(s) per segment when topic differs.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 289F</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Topics in Applied Science: Imaging Science &amp; Photonics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topic in Imaging Science and Photonics.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Graduate standing or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated 5 unit(s) per segment when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Repeat Credit: </em>May be repeated 5 unit(s) per segment when topic differs.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 289G</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Topics in Applied Science: Nonlinear Optics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topic in Nonlinear Optics.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Graduate standing or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated 5 unit(s) per segment when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Repeat Credit: </em>May be repeated 5 unit(s) per segment when topic differs.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 289H</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Topics in Applied Science: Plasma/Fusion Energy Physics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topic in Plasma/Fusion Energy Physics.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Graduate standing or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated 5 unit(s) per segment when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Repeat Credit: </em>May be repeated 5 unit(s) per segment when topic differs.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 289I</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Topics in Applied Science: Quantum Electronics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topic in Quantum Electronics.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Graduate standing or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated 5 unit(s) per segment when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Repeat Credit: </em>May be repeated 5 unit(s) per segment when topic differs.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 289J</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Topics in Applied Science: Condensed Matter/Statistical Physics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topic in Condensed Matter/Statistical Physics.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Graduate standing or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated 5 unit(s) per segment when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Repeat Credit: </em>May be repeated 5 unit(s) per segment when topic differs.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 289K</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Topics in Applied Science: Classical Optics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topic in Classical Optics.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Graduate standing or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated 5 unit(s) per segment when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Repeat Credit: </em>May be repeated 5 unit(s) per segment when topic differs.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 289L</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Topics in Applied Science: Microwave &amp; Millimeter-Wave Technology</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topic in Microwave and Millimeter-Wave Technology.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Graduate standing or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated 5 unit(s) per segment when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Repeat Credit: </em>May be repeated 5 unit(s) per segment when topic differs.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 289M</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Topics in Applied Science: Synchrotron Radiation Science</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topic in Synchrotron Radiation Science.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Graduate standing or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated 5 unit(s) per segment when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Repeat Credit: </em>May be repeated 5 unit(s) per segment when topic differs.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 289N</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Topics in Applied Science: Space Physics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topic in Space Physics.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Graduate standing or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated 5 unit(s) per segment when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Repeat Credit: </em>May be repeated 5 unit(s) per segment when topic differs.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 290</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Seminar</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-2 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Seminar.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Seminar 1-2 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Seminar 1-2 hour(s).<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 290C</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Graduate Research Group Conference</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1 unit)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Graduate research group conference.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Discussion 1 hour(s).</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Discussion 1 hour(s).<br/><em>Repeat Credit: </em>May be repeated.<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 298</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Group Study</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Group study.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 3-15 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 3-15 hour(s).<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>EAD 299</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Research</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-12 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Research.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div></div>
+  
+]]>
+</text>
+<faculty>
+<![CDATA[
+]]>
+</faculty>
+</courseleaf>
+

@@ -3,16 +3,16 @@
 import { Course, Instructor, PrismaClient, Section } from '@prisma/client';
 import { prisma } from './prisma';
 
-export async function getCourseSections(courseCode: string) : Promise<Section[] | undefined> {
+export async function getCourseSections(courseCode: string, termCode: string) : Promise<Section[] | undefined> {
 
     if (typeof (courseCode) != "string") throw new Error("courseCode must be a string");
-    return (await prisma.section.findMany({ where: { courseCode } })) ?? undefined;
+    return (await prisma.section.findMany({ where: { courseCode, termCode }})) ?? undefined;
 }
 
-export async function getCoursesSections(courseCode: string[]) : Promise<Record<string, Section[]> | undefined> {
+export async function getCoursesSections(courseCode: string[], termCode: string) : Promise<Record<string, Section[]> | undefined> {
 
     if (!Array.isArray(courseCode)) throw new Error("courseCode must be an array of strings");
-    const sections = await prisma.section.findMany({ where: { courseCode: { in: courseCode } } });
+    const sections = await prisma.section.findMany({ where: { courseCode: { in: courseCode }, termCode } });
     return sections.reduce((acc, section) => {
         acc[section.courseCode] = acc[section.courseCode] || [];
         acc[section.courseCode].push(section);
@@ -20,21 +20,21 @@ export async function getCoursesSections(courseCode: string[]) : Promise<Record<
     }, {} as Record<string, Section[]>);
 }
 
-export async function getSections(sectionCrns: number[]) : Promise<Record<number, Section>> {
+export async function getSections(sectionCrns: number[], termCode: string) : Promise<Record<number, Section>> {
 
     if (!Array.isArray(sectionCrns)) throw new Error("sectionCrns must be an array of numbers");
     const sections : Record<number, Section> = {};
-    (await prisma.section.findMany({ where: { crn: { in: sectionCrns.map(crn => "" + crn) } } })).forEach(section => {
+    (await prisma.section.findMany({ where: { termCode, crn: { in: sectionCrns.map(crn => "" + crn) } } })).forEach(section => {
         sections[+section.crn] = section;
     });
     return sections ?? undefined;
 }
 
 
-export async function getCourseSectionsWithInstructors(courseCode: string) : Promise<(Section & { instructors: Instructor[] })[] | undefined> {
+export async function getCourseSectionsWithInstructors(courseCode: string, termCode: string) : Promise<(Section & { instructors: Instructor[] })[] | undefined> {
 
     if (typeof (courseCode) != "string") throw new Error("courseCode must be a string");
-    return (await prisma.section.findMany({ where: { courseCode }, include: { instructors: true } }));
+    return (await prisma.section.findMany({ where: { courseCode, termCode }, include: { instructors: true } }));
 }
 
 export async function getCourseInstructors(courseCode: string) : Promise<Instructor[] | undefined> {

@@ -5,6 +5,8 @@ import { useGraphStore } from "@/store/useGraphStore";
 import { Course, Exam, ExamCredit, School } from "@prisma/client";
 import { ReactNode, useEffect, useState } from "react";
 import CourseSearch from "./CourseSearch";
+import { Dropdown } from "./Dropdown";
+import { NumberField } from "./NumberField";
 
 export default function DegreePlanner({ school }: { school: School }) {
     const [examType, setExamType] = useState("None");
@@ -241,33 +243,6 @@ function renderExamTable(userExams: StudentExam[], onScoreChange: (exam: Student
             </tr>)}
         </tbody>
     </table>;
-}
-
-export function Dropdown({ options, title, defaultValue, disabled, onChange }: { title: string, disabled?: boolean, options: Record<string, string>, defaultValue?: string, onChange?: (value: string) => void }) {
-    return <div className="dropdown">
-        <div>{title}</div>
-        <select value={defaultValue} disabled={disabled} onChange={e => onChange && onChange(e.target.value)}>
-            <option className="italic text-gray-500">None</option>
-            {Object.keys(options).sort((a, b) => options[a].localeCompare(options[b])).map(option => <option value={option} key={option}>{options[option]}</option>)}
-        </select>
-    </div>
-}
-
-export function NumberField({ min = 0, max = 100, title, defaultValue, disabled, onChange }: { title: string, disabled?: boolean, min: number, max: number, defaultValue?: number, onChange?: (value: number) => void }) {
-    if (defaultValue != undefined) {
-        if (defaultValue > max) { defaultValue = max; if (onChange) onChange(max); }
-        if (defaultValue < min) { defaultValue = min; if (onChange) onChange(min); }
-    }
-    return <div className="numberfield">
-        <label>
-            <div>{title}</div>
-            <input disabled={disabled || min == max} onChange={e => {
-                if (+e.target.value > max) e.target.value = max.toString();
-                else if (+e.target.value < min) e.target.value = min.toString();
-                if (onChange) onChange(+e.target.value);
-            }} type="number" value={defaultValue} min={min} max={max} />
-        </label>
-    </div>
 }
 
 export type StudentExam = Exam & { score?: number }

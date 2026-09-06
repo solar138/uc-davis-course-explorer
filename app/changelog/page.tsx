@@ -9,6 +9,7 @@ export default async function CourseExplorer() {
       <main className="flex-1 flex min-h-0 overflow-y-scroll">
         <article className="p-4 text-justify w-full max-w-2xl h-fit mx-auto gap-4 flex flex-col">
           <p>For more detailed changes, feel free to visit the <a href="https://www.github.com/4thharbinger/uc-davis-course-explorer/commits">GitHub commits</a></p>
+          <ChangelogEntry date="Sept 5, 2026" changes={["Added current term selector", "You can now create schedules for multiple terms", "Imported Winter 2027 quarter sections"]} />
           <ChangelogEntry date="Aug 2, 2026" changes={["Fix course section display issues", "Fixed some typos in the changelog"]} />
           <ChangelogEntry date="July 28, 2026" changes={["Add transfer credit tab to degree planner"]} />
           <ChangelogEntry date="July 27, 2026" changes={["Add navigation tabs to header"]} />

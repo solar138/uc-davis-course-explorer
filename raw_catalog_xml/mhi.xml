@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<courseleaf>
+
+<title>Health Informatics (MHI)</title>
+
+
+<text>
+<![CDATA[  
+<div class="sc_sccoursedescs">
+<div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>MHI 202</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Computer-Based Patient Records</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Introduction and overview of computer-based clinical record systems. Topics include data modeling, health system standards and terminologies; security, privacy and confidentiality; workflow modeling; data visualization; legal; decision support; public health; and evidence-based practice.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Current enrollment within the Health Informatics Graduate Program or consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 3 hour(s), Discussion 1 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 3 hour(s), Discussion 1 hour(s).<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>MHI 207</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Decision Support Systems</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Explores decision support systems for medical application. Topics include medical decision making, uncertainty, review of existing decision support systems, knowledge engineering, data mining, and knowledge based systems.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture/Discussion 4 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture/Discussion 4 hour(s).<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>MHI 208</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Medical Informatics in Web-Based Enterprise Computing </b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Introduction to the decision making processes and technologies that are involved in developing web-based distributed enterprise applications in medicine. Focus on the Informatician's role as a team member.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 2 hour(s), Discussion 2 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 2 hour(s), Discussion 2 hour(s).<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>MHI 209N</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Consumer Digital Health</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Landscape, technologies, and policies involved in data acquisition, storage and analysis in digital and connected health and consumer health informatics. Models of digital health data monitoring, including clinical, mobile health and telehealth, and theories relevant to health and information behavior by consumers and patients. Design, acquisition and analysis of data in the personal and consumer health ecosystem.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 4 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 4 hour(s).<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>MHI 210</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Introduction to Health Informatics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Overview provides broad exposure to the field of Health Informatics. Topics covered include, but are not limited to, networking, information systems, coding, HL7, Security, and HIPPA.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 3 hour(s), Discussion 1 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 3 hour(s), Discussion 1 hour(s).<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>MHI 212</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Computer Security in Health Informatics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Critical thinking about basic concepts in computer security and privacy. How the computer security and privacy impact health informatics, ranging from electronic health records to telemedicine to remote, virtual surgery.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i><span class="code_bubble" data-code-bubble="MHI 210">MHI 210</span>; <span class="code_bubble" data-code-bubble="MHI 202">MHI 202</span>; MHI 209.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 3 hour(s), Project.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 3 hour(s), Project.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>MHI 289A</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Topics in Medical Informatics: Data Acquisition</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topics in Data Acquisition.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 1-5 hour(s), Laboratory 1-5 hour(s).</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 1-5 hour(s), Laboratory 1-5 hour(s).<br/><em>Repeat Credit: </em>May be repeated when topic differs.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>MHI 289B</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Topics in Health Informatics: Seminars in Clinical Translational Informatics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1 unit)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Seminars in current clinical translational informatics research topics. Guest presenters and faculty led discussions.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Seminar 1 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Seminar 1 hour(s).<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>MHI 289E</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Clinical Knowledge for the Health Informaticist</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(3 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Basic clinical knowledge for health informatics students. Human systems, disease states and conditions, treatments and prognosis.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 2 hour(s), Laboratory 2 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 2 hour(s), Laboratory 2 hour(s).<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>MHI 289F</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Database &amp; Knowledge Management</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Objectives include understanding the informatics techniques for data capture, information management, and knowledge generation that a student will use throughout their career.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture/Discussion 3 hour(s), Term Paper.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture/Discussion 3 hour(s), Term Paper.<br/><em>Repeat Credit: </em>May be repeated.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>MHI 289G</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Special Topics in Health Informatics: Biostatistics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Special topics in Biostatistics. Evaluation Methods and Statistics in Biomedical Informatics. Research design and analysis with special emphasis on Biomedical Informatics.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 3 hour(s), Laboratory 3 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 3 hour(s), Laboratory 3 hour(s).<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>MHI 289H</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Modeling Biological Systems</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Create awareness of how modern computer graphics have led to VR-Sim-Rob applications, and how they are modifying the teaching of medicine and in some cases the diagnosis and treatment of patients.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 3 hour(s), Laboratory 1 hour(s).</li>
+<li><span class="label"><em>Enrollment Restriction(s):</em></span> Limited to 20 students.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 3 hour(s), Laboratory 1 hour(s).<br/><em>Enrollment Restriction(s): </em>Limited to 20 students.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>MHI 289I</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Programming in Health Informatics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(3 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Basics of computer programming essential to the study of informatics. Impacts on systems within healthcare, public health, nursing, research, and others.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 2 hour(s), Laboratory 2 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 2 hour(s), Laboratory 2 hour(s).<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>MHI 290</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Seminar in Medical Informatics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1 unit)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Discussion of current graduate research and topics in Medical Informatics. Oral presentations of individual study.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Seminar 1 hour(s).</li>
+<li><span class="label"><em>Enrollment Restriction(s):</em></span> Restricted to 20 students.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Seminar 1 hour(s).<br/><em>Enrollment Restriction(s): </em>Restricted to 20 students.<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>MHI 298</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Group Study in Health Informatics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Directed reading and discussion on select topics.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor; graduate student in good academic standing.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable 1-5 hour(s).</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable 1-5 hour(s).<br/><em>Repeat Credit: </em>May be repeated when topic differs.<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>MHI 299</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Research in Health Informatics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-12 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Independent research in Health Informatics.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div></div>
+  
+]]>
+</text>
+<faculty>
+<![CDATA[
+]]>
+</faculty>
+</courseleaf>
+

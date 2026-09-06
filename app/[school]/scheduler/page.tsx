@@ -6,6 +6,7 @@ import { CourseSchedule } from "@/components/CourseSchedule";
 import CourseSectionList from "@/components/CourseSectionList";
 import Header from "@/components/Header";
 import { Metadata } from "next";
+import TermSelector from "@/components/TermSelector";
 
 
 export async function generateMetadata({ params }: { params: Promise<{ school: string }> }): Promise<Metadata> {
@@ -38,7 +39,7 @@ export default async function CourseScheduler({ params }: { params: Promise<{ sc
 
   return (
     <div className="flex flex-col w-full h-screen overflow-hidden text-gray-900 bg-white">
-      <Header> Course Scheduler —  <span className="ml-2 text-gray-500">{schoolInfo.shortName}</span> </Header>
+      <Header> Course Scheduler —  <span className="ml-2 text-gray-500">{schoolInfo.shortName}</span> <TermSelector/> </Header>
       <main className="flex-1 flex overflow-hidden min-h-0">
         <CourseSearch school={schoolInfo} />
 

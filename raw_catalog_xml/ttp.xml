@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<courseleaf>
+
+<title>Transportation Technology &amp; Policy (TTP)</title>
+
+
+<text>
+<![CDATA[  
+<div class="sc_sccoursedescs">
+<div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 200</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Transportation Survey Methods</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Description of types of surveys commonly used in transportation demand modeling, including travel and activity diaries, attitudinal, panel, computer, and stated-response surveys. Discussion of sampling, experimental design, and survey design issues. Analysis methods, including factor, discriminant and cluster analysis.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i><span class="code_bubble" data-code-bubble="STA 013">STA 013</span> or <span class="code_bubble" data-code-bubble="STA 013V">STA 013V</span> or <span class="code_bubble" data-code-bubble="STA 013Y">STA 013Y</span>; <span class="code_bubble" data-code-bubble="ECI 251">ECI 251</span> recommended.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 4 hour(s).</li>
+<li><span class="label"><em>Credit Limitation(s):</em></span> Not open for credit to students who have taken <span class="code_bubble" data-code-bubble="ECI 255">ECI 255</span>.</li>
+<li><span class="label"><em>Cross Listing:</em></span> <span class="code_bubble" data-code-bubble="GEO 281">GEO 281</span>.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 4 hour(s).<br/><em>Credit Limitation(s): </em>Not open for credit to students who have taken <span class="code_bubble" data-code-bubble="ECI 255">ECI 255</span>.<br/><em>Cross Listing: </em><span class="code_bubble" data-code-bubble="GEO 281">GEO 281</span>.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 201</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Applied Data Analysis</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Data exploration and integrity; data collection and cleaning techniques; examination of data types, handling missing data and outliers. Coverage of analytical regression techniques encompasses parametric (OLS), semi-parametric (logistic), and non-parametric (GLM, kernel regressions) models. Application of techniques on diverse real-world datasets using various software tools.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i><span class="code_bubble" data-code-bubble="STA 108">STA 108</span>, <span class="code_bubble" data-code-bubble="STA 141A">STA 141A</span>, and <span class="code_bubble" data-code-bubble="STA 141B">STA 141B</span> recommended.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 4 hour(s).</li>
+<li><span class="label"><em>Cross Listing:</em></span> <span class="code_bubble" data-code-bubble="ECI 254">ECI 254</span>.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 4 hour(s).<br/><em>Cross Listing: </em><span class="code_bubble" data-code-bubble="ECI 254">ECI 254</span>.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 202</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Discrete Choice Modeling in Transportation</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Theory and practical aspects of modeling individual choice behavior, including behavioral theory, data requirements, model formulation, statistical estimation and testing, interpretations, and prediction/forecasting for applications in transportation.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i><span class="code_bubble" data-code-bubble="STA 108">STA 108</span>.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture/Discussion 4 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture/Discussion 4 hour(s).<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 210</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Fundamentals of Transportation Technology</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Designed to prepare in the basics of thermodynamics, fluid mechanics and heat transfer as they relate to transportation.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i><span class="code_bubble" data-code-bubble="MAT 021A">MAT 021A</span>; <span class="code_bubble" data-code-bubble="MAT 021B">MAT 021B</span>; <span class="code_bubble" data-code-bubble="MAT 022A">MAT 022A</span>; and consent of instructor; graduate or junior/senior undergraduate as a technical elective.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 2 hour(s), Discussion 2 hour(s).</li>
+<li><span class="label"><em>Enrollment Restriction(s):</em></span> Limited enrollment.</li>
+<li><span class="label"><em>Credit Limitation(s):</em></span> Not open for credit to students who have completed TTP 289. (Former TTP 289.)</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 2 hour(s), Discussion 2 hour(s).<br/><em>Enrollment Restriction(s): </em>Limited enrollment.<br/><em>Credit Limitation(s): </em>Not open for credit to students who have completed TTP 289. (Former TTP 289.)<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 211</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Energy &amp; Transportation Modeling for Policy Analysis</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Development of energy and transportation models for policy analysis. Methods for modeling transportation, electricity, fuels, resources, and infrastructure systems.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 4 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 4 hour(s).<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 220</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Transportation Planning &amp; Policy</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent">This version has ended; see updated course, below.<br/><em>Course Description:</em> Transportation planning process at the regional level, including the role of federal policy in shaping regional transportation planning, tools and techniques used in regional transportation planning, issues facing regional transportation planning agencies, pros and cons of potential solutions and strategies.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture/Discussion 4 hour(s).</li>
+<li><span class="label"><em>Enrollment Restriction(s):</em></span> Limited enrollment.</li>
+<li><span class="label"><em>Credit Limitation(s):</em></span> Students having taken this course previously as TTP 289 cannot repeat it for credit; having taken other TTP 289 offerings does not preclude taking this course for credit.</li>
+<li><span class="label"><em>Cross Listing:</em></span> <span class="code_bubble" data-code-bubble="GEO 236">GEO 236</span>.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+
+<ul>
+<li><span class="text detail-code margin--span text--semibold text--big"><h5><span class="code_bubble" data-code-bubble="TTP 220">TTP 220</span> — Transportation Policy (4 units)</h5></span></li>
+<li><span class="label"><em>Course Description:</em></span>  Application of policy concepts to the transportation context. Overview of the transportation policy landscape. Critical challenges in transportation including sustainability and mobility justice.</li>
+<li><span class="label"><em>
+Learning Activities:</em></span>  Lecture/Discussion 4 hour(s).</li>
+<li><span class="label"><em>
+Cross Listing:</em></span>  <span class="code_bubble" data-code-bubble="GEO 236">GEO 236</span>.</li>
+<li><span class="label"><em>
+Grade Mode:</em></span>  Letter.</li>
+<li>This course version is effective from, and including:  Fall Quarter 2026.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture/Discussion 4 hour(s).<br/><em>Enrollment Restriction(s): </em>Limited enrollment.<br/><em>Credit Limitation(s): </em>Students having taken this course previously as TTP 289 cannot repeat it for credit; having taken other TTP 289 offerings does not preclude taking this course for credit.<br/><em>Cross Listing: </em><span class="code_bubble" data-code-bubble="GEO 236">GEO 236</span>.<br/><em>Grade Mode: </em>Letter.</div>
+
+<div>
+<h5><span class="code_bubble" data-code-bubble="TTP 220">TTP 220</span> — Transportation Policy (4 units)</h5><br/><em>Course Description:</em>  Application of policy concepts to the transportation context. Overview of the transportation policy landscape. Critical challenges in transportation including sustainability and mobility justice.<br/><em>
+Learning Activities:</em>  Lecture/Discussion 4 hour(s).<br/><em>
+Cross Listing:</em>  <span class="code_bubble" data-code-bubble="GEO 236">GEO 236</span>.<br/><em>
+Grade Mode:</em>  Letter.<br/>This course version is effective from, and including:  Fall Quarter 2026.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 221</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Pavement for Managers</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(3 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Concepts and knowledge needed by policy-makers, planners, and managers to understand pavements, including all urban hardscapes. Materials production, design, construction, maintenance and rehabilitation, use, and end-of-life. Implications for costs, environmental impacts, and societal impacts. Communicating pavement issues with decision-makers and the public.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture/Discussion 2 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture/Discussion 2 hour(s).<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 223</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Behavioral Theories &amp; Applications</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Theoretical approaches for research in transportation and behavioral outcomes. Application of behavior theories to research question and hypothesis formulation, study design, data collection and planned analysis in travel behavior.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture 4 hour(s).</li>
+<li><span class="label"><em>Enrollment Restriction(s):</em></span> Restricted to graduate students.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture 4 hour(s).<br/><em>Enrollment Restriction(s): </em>Restricted to graduate students.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 224</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Transportation Equity &amp; Justice</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Topics in transportation equity and justice. Theories of mobility justice, review of historical planning and policy, evaluation of equity analyses, and investigation of equity across mode and domain specific topics in transportation.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture/Discussion 4 hour(s).</li>
+<li><span class="label"><em>Enrollment Restriction(s):</em></span> Restricted to upper division and graduate students.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture/Discussion 4 hour(s).<br/><em>Enrollment Restriction(s): </em>Restricted to upper division and graduate students.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 225</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Bicycle &amp; Pedestrian Planning &amp; Design</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Principles of bicycle and pedestrian planning and design. Safety, behavior, and performance metrics in planning and design. City-scale planning in the US in the context of regional, state, and national policy. Lessons learned from outside the US. Weekend field trips are required.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture/Discussion 4 hour(s).</li>
+<li><span class="label"><em>Enrollment Restriction(s):</em></span> Restricted to graduate standing or consent of instructor.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture/Discussion 4 hour(s).<br/><em>Enrollment Restriction(s): </em>Restricted to graduate standing or consent of instructor.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 281</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— ITS Transportation Seminar Series</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1 unit)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Transportation seminars by guest speakers, on varied topics.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Seminar 1.50 hour(s).</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Seminar 1.50 hour(s).<br/><em>Repeat Credit: </em>May be repeated.<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 282</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Transportation Orientation Seminar</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1 unit)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Ten weeks of seminars, introducing various topics in transportation research and education, focusing on topics of particular interest at UC Davis.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Seminar 1 hour(s).</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Seminar 1 hour(s).<br/><em>Repeat Credit: </em>May be repeated.<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 283</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Professionalism, Leadership, &amp; Ethics</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1 unit)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Speakers from industry, government, academia, and NGOs will lead discussions about succeeding and performing in the professional world. They will address leadership, ethics, and other workplace issues.</p></div><div class="noindent"></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Seminar 2 hour(s).</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Seminar 2 hour(s).<br/><em>Repeat Credit: </em>May be repeated.<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 284</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Dissertation Proposal Workshop</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(2 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Steps to completing a dissertation proposal. Review of research design concepts. Criteria for measurement, internal, and external validity.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture/Discussion 2 hour(s).</li>
+<li><span class="label"><em>Enrollment Restriction(s):</em></span> Restricted to Transportation Technology &amp; Policy graduate students or consent of instructor.</li>
+<li><span class="label"><em>Grade Mode:</em></span> S/U only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture/Discussion 2 hour(s).<br/><em>Enrollment Restriction(s): </em>Restricted to Transportation Technology &amp; Policy graduate students or consent of instructor.<br/><em>Grade Mode: </em>S/U only.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 289A</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Selected Topics in Transportation Technology &amp; Policy</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Directed group study of special topics with instruction carried out through lecture or laboratory, or a combination of both.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture, Laboratory.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Letter.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture, Laboratory.<br/><em>Repeat Credit: </em>May be repeated.<br/><em>Grade Mode: </em>Letter.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 289B</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Selected Topics in Transportation Technology &amp; Policy</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Directed group study of special topics with instruction carried out lecture or laboratory, or a combination of both.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Lecture, Laboratory.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Lecture, Laboratory.<br/><em>Repeat Credit: </em>May be repeated.<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 290C</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Graduate Research Group Conference</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1 unit)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Research problems, progress, and techniques in transportation.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Discussion 1 hour(s).</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Discussion 1 hour(s).<br/><em>Repeat Credit: </em>May be repeated.<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 292</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Internship in TTP</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Supervised work experience in transportation studies.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor; second year standing; approval of project prior to period of internship.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Internship.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated when topic differs.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Internship.<br/><em>Repeat Credit: </em>May be repeated when topic differs.<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 298</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Group Study</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-5 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Group study.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Discussion 1-5 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Discussion 1-5 hour(s).<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 299</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Research</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-12 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Research.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Consent of instructor.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Discussion 1-12 hour(s).</li>
+<li><span class="label"><em>Grade Mode:</em></span> Satisfactory/Unsatisfactory only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Discussion 1-12 hour(s).<br/><em>Grade Mode: </em>Satisfactory/Unsatisfactory only.</div>
+</div></div></div><div class="courseblock"><h3 class="cols noindent"><span class="text courseblockdetail detail-code margin--span text--semibold text--big"><b>TTP 396</b></span> <span class="text courseblockdetail detail-title margin--span text--semibold text--big"><b>— Teaching Assistant Training Practicum</b></span> <span class="text courseblockdetail detail-hours_html margin--span text--semibold text--big"><b>(1-4 units)</b></span> </h3><div class="noindent"></div><div class="noindent"><p class="courseblockextra noindent"><em>Course Description:</em> Teaching assistant training practicum.</p></div><div class="noindent"><p class="text courseblockdetail detail-prerequisite"><i>Prerequisite(s): </i>Graduate standing.</p></div><div class="noindent notinpdf"><div class="courseblockextra noindent"><h4 class="toggle bubble-hide"></h4>
+<ul>
+<li><span class="label"><em>Learning Activities:</em></span> Variable.</li>
+<li><span class="label"><em>Repeat Credit:</em></span> May be repeated.</li>
+<li><span class="label"><em>Grade Mode:</em></span> Pass/No Pass only.</li></ul>
+</div></div><div hidden="true" class="noindent"><div class="courseblockextra noindent"><div>
+<em>Learning Activities: </em>Variable.<br/><em>Repeat Credit: </em>May be repeated.<br/><em>Grade Mode: </em>Pass/No Pass only.</div>
+</div></div></div></div>
+  
+]]>
+</text>
+<faculty>
+<![CDATA[
+]]>
+</faculty>
+</courseleaf>
+

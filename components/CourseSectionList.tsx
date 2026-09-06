@@ -21,7 +21,8 @@ export default function CourseSectionList({ addTarget, schoolInfo } : { addTarge
     const hoverCrn = useScheduleStore((state) => state.hoverCrn);
 
     const activeScheduling = useScheduleStore((state) => state.activeScheduling) ?? "";
-    const schedule = useScheduleStore((state) => state.schedule);
+    const selectedTerm = useScheduleStore((state) => state.selectedTerm);
+    const schedule = useScheduleStore((state) => state.schedules)[selectedTerm];
     const setActiveScheduling = useScheduleStore((state) => state.setActiveScheduling);
     const rescheduleCourse = useScheduleStore((state) => state.rescheduleCourse);
 
@@ -32,7 +33,7 @@ export default function CourseSectionList({ addTarget, schoolInfo } : { addTarge
                 setSections(sectionsCache[activeScheduling]);
                 return;
             }
-            getCourseSectionsWithInstructors(activeScheduling).then((sections) => {
+            getCourseSectionsWithInstructors(activeScheduling, selectedTerm).then((sections) => {
                 if (sections) {
                     setSectionsCourse(activeScheduling);
                     setSections(sections);

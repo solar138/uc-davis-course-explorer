@@ -26,7 +26,7 @@ export function CourseInspector({ courseId, addTarget, school }: { courseId?: st
   const creditCourses = useDegreeStore((state) => state.awardedCredit).map(x => x.slug);
 
   const courses : string[] = addTarget == "graph" ? useGraphStore((state) => state.nodes).map(x => x.data.slug as string) : 
-                  addTarget == "schedule" ? Object.keys(useScheduleStore((state) => state.schedule)) : 
+                  addTarget == "schedule" ? Object.keys(useScheduleStore((state) => state.schedules)[useScheduleStore((state) => state.selectedTerm)]) : 
                   addTarget == "planner" ? [...creditCourses, ...useDegreeStore((state) => state.courses).map(x => x.slug)] : [];
   const [course, setCourse] = useState<Course>();
   const [instructors, setInstructors] = useState<Instructor[]>([]);

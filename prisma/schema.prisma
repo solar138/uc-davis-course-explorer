@@ -47,16 +47,28 @@ model Instructor {
   schoolName   String 
 
   courses     Course[] 
-  sections    Section[]
+  sections    SectionInstructor[]
   school      School @relation(fields: [schoolName], references: [name], onDelete: Cascade, map: "instructor_school_fkey")
+}
+model SectionInstructor {
+  instructorId String
+  sectionCrn   String
+  sectionTerm  String
+
+  instructor   Instructor @relation(fields: [instructorId], references: [id])
+  section      Section    @relation(fields: [sectionCrn, sectionTerm], references: [crn, termCode])
+
+
+  @@id([instructorId, sectionCrn, sectionTerm])
 }
 
 model Section {
-  crn          String   @id // e.g., "36077"
+  @@id([crn, termCode])
+  crn          String       // e.g., "36077"
   courseCode   String       // Links to Course.code (e.g., "MAT021C")
   termCode     String       // e.g., "202610" (Fall 2026)
   sectionNum   String       // e.g., "A01"
-  instructors  Instructor[]      // e.g., "Garving Luli"
+  instructors  SectionInstructor[]      // e.g., "Garving Luli"
   
   meetings     Json         @default("[]") 
   finalExam    DateTime?

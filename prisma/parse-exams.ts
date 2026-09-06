@@ -10,8 +10,8 @@ async function ingestIBExams() {
     // 1. Clean the data
     const subject = examData.name.trim();
     const type = "ap";
-    const level = ""; // Standardizing to HL for UC Davis IB credits
-    const minScore = examData.minScore || 3; // Default to 5 if not specified
+    const level = ""; // N/A for AP exams
+    const minScore = examData.minScore || 3; // Default to 3 if not specified
     const maxScore = examData.maxScore || 5;
 
     // 2. Upsert the base Exam record
@@ -59,7 +59,7 @@ async function ingestIBExams() {
     console.log(`✅ Ingested: ${subject} (Min Score: ${minScore})`);
   }
 
-  console.log("Finished ingesting all IB exams!");
+  console.log("Finished ingesting all AP exams!");
 }
 
 ingestIBExams()

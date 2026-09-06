@@ -13,7 +13,8 @@ const sectionsCache : Record<number, Section> = {} // crn to section data
 const availableSectionsCache : Record<string, Section[]> = {} // coursecode to section data
 
 export function CourseSchedule() {
-  const courses = useScheduleStore((state) => state.schedule);
+  const selectedTerm = useScheduleStore((state) => state.selectedTerm);
+  const courses = useScheduleStore((state) => state.schedules)[selectedTerm] ?? {};
   const setSchedule = useScheduleStore((state) => state.setSchedule);
   const hoverCrn = useScheduleStore((state) => state.hoverCrn);
   const setHoverCrn = useScheduleStore((state) => state.setHoverCrn);
@@ -51,7 +52,7 @@ export function CourseSchedule() {
             }
         }
         if (missing.length > 0) {
-            getSections(missing.map(x => +x)).then((sections) => {
+            getSections(missing.map(x => +x), selectedTerm).then((sections) => {
                 if (sections != undefined) {
                     Object.keys(courses).forEach(courseCode => { 
                         newSections[courseCode] = sections[courses[courseCode]]; 
@@ -77,7 +78,7 @@ export function CourseSchedule() {
             }
         }
         if (missingSections.length > 0) {
-            getCoursesSections(Object.keys(courses)).then((sections) => {
+            getCoursesSections(Object.keys(courses), selectedTerm).then((sections) => {
                 for (const section in sections) {
                     availableSectionsCache[section] = sections[section];
                     for (const sectionData of sections[section]) {
