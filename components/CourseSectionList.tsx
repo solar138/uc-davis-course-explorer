@@ -22,7 +22,7 @@ export default function CourseSectionList({ addTarget, schoolInfo } : { addTarge
 
     const activeScheduling = useScheduleStore((state) => state.activeScheduling) ?? "";
     const selectedTerm = useScheduleStore((state) => state.selectedTerm);
-    const schedule = useScheduleStore((state) => state.schedules)[selectedTerm];
+    const schedule = useScheduleStore((state) => state.schedules)[selectedTerm] ?? {};
     const setActiveScheduling = useScheduleStore((state) => state.setActiveScheduling);
     const rescheduleCourse = useScheduleStore((state) => state.rescheduleCourse);
 
