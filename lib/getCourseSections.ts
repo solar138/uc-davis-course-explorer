@@ -30,15 +30,51 @@ export async function getSections(sectionCrns: number[], termCode: string) : Pro
     return sections ?? undefined;
 }
 
-
-export async function getCourseSectionsWithInstructors(courseCode: string, termCode: string) : Promise<(Section & { instructors: Instructor[] })[] | undefined> {
-
+export async function getCourseSectionsWithInstructors(courseCode: string, termCode: string): Promise<(Section & { instructors: Instructor[] })[] | undefined> {
     if (typeof (courseCode) != "string") throw new Error("courseCode must be a string");
-    return (await prisma.section.findMany({ where: { courseCode, termCode }, include: { instructors: true } }));
+    
+    const sections = await prisma.section.findMany({ 
+        where: { courseCode, termCode }, 
+        include: { 
+            instructors: {
+                include: {
+                    instructor: true
+                }
+            } 
+        } 
+    });
+
+    // Strip away the SectionInstructor join wrapper to match the expected return type
+    return sections.map(section => ({
+        ...section,
+        instructors: section.instructors.map(join => join.instructor)
+    }));
 }
 
-export async function getCourseInstructors(courseCode: string) : Promise<Instructor[] | undefined> {
+export async function getCourseInstructors(courseCode: string): Promise<Instructor[] | undefined> {
     if (typeof (courseCode) != "string") throw new Error("courseCode must be a string");
-    const instructors = (await prisma.course.findUnique({ where: { slug: courseCode }, include: { sections: { include: { instructors: true } } } }))?.sections.flatMap(section => section.instructors);
-    return [...new Map(instructors?.map(instructor => [instructor.fullName, instructor])).values()]
+    
+    const course = await prisma.course.findUnique({ 
+        where: { slug: courseCode }, 
+        include: { 
+            sections: { 
+                include: { 
+                    instructors: {
+                        include: {
+                            instructor: true
+                        }
+                    } 
+                } 
+            } 
+        } 
+    });
+
+    // Extract the actual instructor from the nested join table, then deduplicate
+    const instructors = course?.sections.flatMap(section => 
+        section.instructors.map(join => join.instructor)
+    );
+    
+    if (!instructors) return undefined;
+
+    return [...new Map(instructors.map(instructor => [instructor.fullName, instructor])).values()];
 }
